@@ -1,0 +1,26 @@
+{
+  "name": "fcc-product-landing-page",
+  "version": "1.0.0",
+  "description": "FCC: Product Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "(Flex",
+    "transitions",
+    "etc.)",
+    "SASS",
+    "(mixins",
+    "etc.)",
+    "Vanilla",
+    "JS"
+  ],
+  "author": "Ralitsa Taylor",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
