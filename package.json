@@ -2,9 +2,10 @@
   "name": "fcc-product-landing-page",
   "version": "1.0.0",
   "description": "FCC: Product Landing Page",
-  "main": "index.js",
+  "homepage": "http://ralitsavoronevska.github.io/fcc-product-landing-page",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "HTML5",
@@ -21,6 +22,7 @@
   "author": "Ralitsa Taylor",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "node-sass": "^9.0.0"
   }
 }
