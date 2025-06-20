@@ -1,5 +1,6 @@
-# FCC: Build a Tribute Page [Brendan Eich]
-[Codepen](https://codepen.io/ralitsavoronevska/pen/zVOaXb) | [Live Preview](https://ralitsavoronevska.github.io/fcc_tribute_page/)
+# FCC: Build a Product Landing Page
+I've recreated some of the sections from https://certificates.dev/vuejs.
+[Codepen](https://codepen.io/ralitsavoronevska/pen/GgJKYWp) | [Live Preview](https://ralitsavoronevska.github.io/fcc-product-landing-page/)
 
 # Desktop preview:
 <img src="dist/img/fcc_tribute_page_desktop_preview.jpg" />
@@ -12,20 +13,17 @@
 
 # Built with:
 * HTML5, CSS3/SASS [Animations & Flex Layout], Vanilla Javascript
-* [AOS Library v2.3.4](https://github.com/michalsnik/aos/tree/v2)
-* [Google Fonts](https://fonts.google.com/)
-* [SVG Icons [Font Awesome v5.9.0]](https://fontawesome.com/changelog/latest)
+* [Google Fonts: Varela Round](https://fonts.google.com/specimen/Varela+Round)
+* [SVG Icons [Font Awesome]](https://fontawesome.com/)
 
 # Browser support:
-(Last updated and tested: 31/05/2020)
-* Chrome 83.0.4103.61 (Official Build) (64-bit)
-* Firefox 76.0.1 (64-bit)
-* Opera 68.0.3618.125
-* IE - no support for the moment
+(Last updated and tested: 19/06/2025)
+* Chrome 137.0.7151.120 (Official Build) (64-bit)
+* Firefox 139.0.4 (64-bit)
+* Opera 119.0.5497.110 (64-bit)
+* Microsoft Edge 137.0.3296.83 (Official build) (64-bit)
 
 # Tools used:
-* [Photopea [Online Photo Editor]](https://www.photopea.com/)
-* [CSS filter generator to convert from black to target hex color [SVGs]](https://codepen.io/sosuke/pen/Pjoqqp)
 * [W3C HTML Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [LightHouse Audit](https://developers.google.com/web/tools/lighthouse/)
