@@ -7,6 +7,7 @@ let productsMidLevel = document.querySelector("#pricing .mid-level");
 let productsSeniorLevel = document.querySelector("#pricing .senior-level");
 let root = document.querySelector(':root');
 let header = document.querySelector("#header");
+let fontawesomeSvgs = document.querySelectorAll(".fa-primary");
 
 function switchUnchecked() {
   root.style.setProperty('--primary', 'var(--green)');
@@ -24,6 +25,8 @@ function switchUnchecked() {
   productsMidLevel.classList.remove("d-none");
   productsMidLevel.classList.add("d-flex");
   seniorLevelHeading.classList.add("grayed-out-text");
+  fontawesomeSvgs.forEach((svg) => { svg.classList.remove("pink-filter"); })
+  fontawesomeSvgs.forEach((svg) => { svg.classList.add("green-filter");})
 }
 
 function switchChecked() {
@@ -42,6 +45,8 @@ function switchChecked() {
   productsSeniorLevel.classList.add("d-flex");
   seniorLevelHeading.classList.remove("grayed-out-text");
   midLevelHeading.classList.add("grayed-out-text");
+  fontawesomeSvgs.forEach((svg) => { svg.classList.remove("green-filter"); })
+  fontawesomeSvgs.forEach((svg) => { svg.classList.add("pink-filter"); })
 }
 
 seniorLevel.addEventListener("click", (e) => {
@@ -58,3 +63,7 @@ midLevel.addEventListener("click", (e) => {
 switchForLevels.addEventListener("change", (e) => {
   !switchForLevels.checked ? switchUnchecked() : switchChecked();
 });
+
+window.addEventListener("load", (event) => {
+  switchUnchecked();
+})
