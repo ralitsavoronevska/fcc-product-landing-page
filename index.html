@@ -9,11 +9,13 @@
     <meta name="theme-color" content="#42b883">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>FCC: Product Landing Page</title>
-    <link rel="stylesheet" href="css/styles.css" media="all">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" media="all">
+    <link rel="preload" href="css/styles.css" as="" media="all">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" as="" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" media="all">
     <link rel="preload" as="image" href="img/vuejs.webp" />
     <link rel="preload" as="image" href="img/exam-image-1.svg" />
     <link rel="preload" as="image" href="img/exam-image-2.svg" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
   </head>
   <body>
     <div id="page-wrapper" class="position-relative">
@@ -54,7 +56,7 @@
               <div class="card-header position-relative pb-0">
                 <p class="level-label text-primary fw-bold position-absolute mb-0 text-uppercase">Step 1</p>
                 <div class="icon d-flex align-items-center justify-content-center flex-column">
-                  <svg class="fa fa-3x fa-primary fa-file-contract"></svg>
+                  <svg class="fa fa-3x fa-primary green-filter fa-file-contract"></svg>
                   <h3 class="text-center mt-3 mb-2">Exam Preparation</h3>
                 </div>
               </div>
@@ -66,7 +68,7 @@
               <div class="card-header position-relative pb-0">
                 <p class="level-label text-primary fw-bold position-absolute mb-0 text-uppercase">Step 2</p>
                 <div class="icon d-flex align-items-center justify-content-center flex-column">
-                  <svg class="fa fa-3x fa-primary fa-file-code"></svg>
+                  <svg class="fa fa-3x fa-primary green-filter fa-file-code"></svg>
                   <h3 class="text-center mt-3 mb-2">Optional Training</h3>
                 </div>
               </div>
@@ -79,7 +81,7 @@
             <div class="card-header position-relative pb-0">
               <p class="level-label text-primary fw-bold position-absolute mb-0 text-uppercase">Step 3</p>
               <div class="icon d-flex align-items-center justify-content-center flex-column">
-                <svg class="fa fa-3x fa-primary fa-pen"></svg>
+                <svg class="fa fa-3x fa-primary green-filter fa-pen"></svg>
                 <h3 class="text-center mt-0 mb-2">Take Examination</h3>
               </div>
             </div>
@@ -213,15 +215,15 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid-Level</p>
-                      <svg class="fa fa-3x fa-primary fa-clipboard mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-clipboard mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam Only</p>
                     </div>  
                     <h3 class="product-price fw-bold">$198</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-3 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
                       </ol>
                     </div>
                     <div class="btn-gradient-container d-flex align-items-center justify-content-center">  
@@ -236,19 +238,19 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid-Level</p>
-                      <svg class="fa fa-3x fa-primary fa-trophy mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-trophy mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam <br/>& Preparation Bundle</p>
                     </div>
                     <h3 class="product-price fw-bold">$399</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Self-Study Training Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Training Challenge Solutions</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Free Retake</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Trial Exam</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Self-Study Training Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Training Challenge Solutions</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Free Retake</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Trial Exam</li>
                       </ol>
                     </div>
                     <a href="#" class="btn btn-primary fw-bold text-uppercase">Buy</a>
@@ -260,20 +262,20 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid-Level</p>
-                      <svg class="fa fa-3x fa-primary fa-chalkboard-user mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-chalkboard-user mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam, Preparation<br/>& Bootcamp Bundle</p>
                     </div>
                     <h3 class="product-price fw-bold">$599</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Self-Study Training Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Training Challenge Solutions</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Intensive Bootcamp Training</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Free Retake</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Trial Exam</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Self-Study Training Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Training Challenge Solutions</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Intensive Bootcamp Training</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Free Retake</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Trial Exam</li>
                       </ol>
                     </div>
                     <div class="btn-gradient-container d-flex align-items-center justify-content-center">  
@@ -289,15 +291,15 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid + Senior</p>
-                      <svg class="fa fa-3x fa-primary fa-clipboard mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-clipboard mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam Only</p>
                     </div>  
                     <h3 class="product-price fw-bold">$399</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-3 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
                       </ol>
                     </div>
                     <div class="btn-gradient-container d-flex align-items-center justify-content-center">  
@@ -312,19 +314,19 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid + Senior</p>
-                      <svg class="fa fa-3x fa-primary fa-trophy mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-trophy mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam <br/>& Preparation Bundle</p>
                     </div>
                     <h3 class="product-price fw-bold">$659</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Self-Study Training Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Training Challenge Solutions</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Free Retake</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Trial Exam</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Self-Study Training Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Training Challenge Solutions</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Free Retake</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Trial Exam</li>
                       </ol>
                     </div>
                     <a href="#" class="btn btn-primary fw-bold text-uppercase">Buy</a>
@@ -336,20 +338,20 @@
                   <div class="level-container d-flex align-items-center justify-content-center flex-column w-100">
                     <div class="level-content text-uppercase fw-bold">
                       <p class="level-label text-primary position-absolute mb-0 text-capitalize">Mid + Senior</p>
-                      <svg class="fa fa-3x fa-primary fa-chalkboard-user mt-5"></svg>
+                      <svg class="fa fa-3x fa-primary green-filter fa-chalkboard-user mt-5"></svg>
                       <p class="product-coverage fw-bold mt-2">Exam, Preparation<br/>& Bootcamp Bundle</p>
                     </div>
                     <h3 class="product-price fw-bold">$1199</h3>
                     <div class="card-text">
                       <ol class="d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Preparation Guide Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Discord Community Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Self-Study Training Access</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Training Challenge Solutions</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Intensive Bootcamp Training</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Free Retake</li>
-                        <li><svg class="fa fa-primary fa-circle-check"></svg>Trial Exam</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Preparation Guide Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Discord Community Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Self-Study Training Access</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Training Challenge Solutions</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Mid-level Vue.js Exam Voucher</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Intensive Bootcamp Training</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Free Retake</li>
+                        <li><svg class="fa fa-primary green-filter fa-circle-check"></svg>Trial Exam</li>
                       </ol>
                     </div>
                     <div class="btn-gradient-container d-flex align-items-center justify-content-center">  
