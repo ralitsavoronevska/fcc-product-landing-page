@@ -26,7 +26,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Varela Round", sans-serif !important;
+  font-family: "Verdana", sans-serif !important;
   font-weight: 400 !important;
   font-style: normal;
   background-color: var(--bg-primary) !important;
@@ -49,6 +49,9 @@ h2.text-center {
   @media (min-width: 768px) {
     h2.text-center {
       font-size: 2.5rem !important; } }
+
+header, .container {
+  content-visibility: auto; }
 
 .btn {
   padding: 15px 40px !important;
