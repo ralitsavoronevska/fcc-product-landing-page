@@ -310,32 +310,32 @@ body:has(#chkToggle:checked) .main-nav {
     @media (min-width: 768px) {
       #hero h1 {
         font-size: 2.5rem; } }
-  #hero #form {
+  #hero #email-form {
     gap: 0;
     width: 100%;
     flex-direction: column; }
-    #hero #form input[type='email'] {
+    #hero #email-form input[type='email'] {
       max-width: 275px;
       width: 100%;
       padding: 8px;
       border-radius: var(--border-radius); }
-    #hero #form input[type='submit'] {
+    #hero #email-form input[type='submit'] {
       max-width: 150px;
       width: 100%;
       margin: 15px 0;
       padding: 6px 12px !important;
       border: 0;
       background-color: var(--primary); }
-      #hero #form input[type='submit']:hover {
+      #hero #email-form input[type='submit']:hover {
         transition: background-color 1s; }
     @media (min-width: 768px) {
-      #hero #form {
+      #hero #email-form {
         width: calc(100% / 1.5); }
-        #hero #form input[type='email'] {
+        #hero #email-form input[type='email'] {
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
           border: 3px solid var(--primary); }
-        #hero #form input[type='submit'] {
+        #hero #email-form input[type='submit'] {
           height: 2.85rem;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0; } }
