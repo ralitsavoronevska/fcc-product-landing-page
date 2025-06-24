@@ -23,7 +23,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
@@ -61,6 +61,12 @@ h2 {
 
 header, .container {
   content-visibility: auto;
+}
+
+.img-fluid {
+  @media (min-width: 768px) {
+    width: 50% !important;
+  }
 }
 
 .btn {
