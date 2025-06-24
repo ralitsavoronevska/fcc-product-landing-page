@@ -53,6 +53,10 @@ h2.text-center {
 header, .container {
   content-visibility: auto; }
 
+@media (min-width: 768px) {
+  .img-fluid {
+    width: 50% !important; } }
+
 .btn {
   padding: 15px 40px !important;
   font-size: 1em !important;
