@@ -11,6 +11,9 @@
     <title>FCC: Product Landing Page</title>
     <link rel="stylesheet" href="css/styles.css" media="all" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" media="all" />
   </head>
   <body>
     <div id="page-wrapper" class="position-relative">
@@ -20,7 +23,7 @@
             <svg class="fa fa-bars"></svg>
           </label>
           <a class="logo" href="https://certificates.dev/vuejs#top">
-            <img id="header-img" class="d-flex align-items-center justify-content-center" src="img/vuejs.webp" width="50" height="50" alt="Image vuejs services" title="Image vuejs services">
+            <img id="header-img" class="d-flex align-items-center justify-content-center" loading="lazy" src="img/vuejs.webp" width="50" height="50" alt="Image vuejs services" title="Image vuejs services">
           </a>
           <input type="checkbox" id="chkToggle" aria-label="Mobile Hamburger Button"></input>
           <nav id="nav-bar">
@@ -83,8 +86,8 @@
             <div class="card-body">
               <p class="card-text mb-0">The online exam will consist of both multiple choice questions and practical coding exercises. Take the exam whenever convenient for you from the comfort of your home.</p>
               <div class="d-flex flex-row">
-                <img alt="Exam image 1" data-lazy-src="img/exam-image-1.svg" width="640" height="360" class="w-50 h-50">
-                <img alt="Exam image 2" data-lazy-src="img/exam-image-2.svg" width="640" height="360" class="w-50 h-50">
+                <img alt="Exam image 1" loading="lazy" src="img/exam-image-1.svg" width="640" height="360" class="w-50 h-50"> 
+                <img alt="Exam image 2" loading="lazy" src="img/exam-image-2.svg" width="640" height="360" class="w-50 h-50">
               </div>
             </div>
           </div>
@@ -180,7 +183,7 @@
               </div>
             </div>
           </div>
-          <iframe id="video" title="Certified Vue.js Developer: Chapter 1 Overview" height="315" data-lazy-src="https://www.youtube-nocookie.com/embed/8SQDZ-P-h3Q?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe id="video" title="Certified Vue.js Developer: Chapter 1 Overview" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/8SQDZ-P-h3Q?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
         </section>
         <section id="switch-for-levels" class="d-flex flex-column align-items-center justify-content-center">
           <h2 class="text-center">Choose Your <span class="gradient-text primary-text">Level</span></h2>
@@ -372,6 +375,6 @@
       </footer>
     </div>
   </body>
-  <script defer data-lazy-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <script defer data-lazy-src="js/script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
 </html>
