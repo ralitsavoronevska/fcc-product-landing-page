@@ -10,10 +10,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>FCC: Product Landing Page</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap-utilities.min.css" integrity="sha512-ooC60t939JQlDgMDZ4CoLIVrNvUu1XeA4p2o0sT1apgD+75ZAhuO0eMugE6nHUhr0MEz8UOXMvNGSvdVMsk0Kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=fallback" />
+    <link rel="preload" as="styles" href="https://www.youtube-nocookie.com/s/player/9fe2e06e/www-player.css" />
+    <link rel="preload" as="styles" href="https://www.youtube-nocookie.com/s/player/9fe2e06e/embed_ui_css.css" />
+    <link rel="preload" as="script" href="https://www.youtube-nocookie.com/s/player/9fe2e06e/player_ias.vflset/en_US/base.js" />
   </head>
   <body>
     <div id="page-wrapper" class="position-relative">
@@ -85,9 +88,9 @@
             </div>
             <div class="card-body">
               <p class="card-text mb-0">The online exam will consist of both multiple choice questions and practical coding exercises. Take the exam whenever convenient for you from the comfort of your home.</p>
-              <div class="d-flex flex-row">
-                <img alt="Exam image 1" loading="lazy" src="img/exam-image-1.svg" width="640" height="360" class="w-50 h-50"> 
-                <img alt="Exam image 2" loading="lazy" src="img/exam-image-2.svg" width="640" height="360" class="w-50 h-50">
+              <div class="d-flex flex-column flex-md-row">
+                <img alt="Exam image 1" loading="lazy" src="img/exam-image-1.svg" width="640" height="360" class="img-fluid w-md-50"> 
+                <img alt="Exam image 2" loading="lazy" src="img/exam-image-2.svg" width="640" height="360" class="img-fluid w-md-50">
               </div>
             </div>
           </div>
