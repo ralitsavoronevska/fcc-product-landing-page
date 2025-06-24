@@ -223,11 +223,10 @@ header {
   background-color: rgba(26, 26, 26, 0.5);
   box-shadow: 3px 3px 12px rgba(66, 184, 131, 0.25); }
   header .navbar {
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
     align-items: flex-start;
     justify-content: flex-start; }
     header .navbar .navbar-toggle {
-      position: absolute;
       top: 15px;
       right: 20px;
       cursor: pointer;
@@ -541,7 +540,8 @@ body:has(#chkToggle:checked) .main-nav {
 /** Footer styling **/
 footer {
   padding: 1rem;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  min-height: 6rem; }
   footer > ul > li {
     padding: 0 10px; }
   footer a:hover {
