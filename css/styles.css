@@ -223,7 +223,7 @@ header {
   background-color: rgba(26, 26, 26, 0.5);
   box-shadow: 3px 3px 12px rgba(66, 184, 131, 0.25); }
   header .navbar {
-    padding-bottom: 10px !important;
+    padding-bottom: 10px;
     align-items: flex-start;
     justify-content: flex-start; }
     header .navbar .navbar-toggle {
