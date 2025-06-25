@@ -3,21 +3,28 @@ I've recreated some of the sections from https://certificates.dev/vuejs.
 [Codepen](https://codepen.io/ralitsavoronevska/pen/GgJKYWp) | [Live Preview](https://ralitsavoronevska.github.io/fcc-product-landing-page/)
 
 # Desktop preview:
-<img src="dist/img/fcc_tribute_page_desktop_preview.jpg" />
+<img src="dist/img/fcc-product-landing-page-desktop-preview.png" />
 
 # Tablet preview:
-<img src="dist/img/fcc_tribute_page_tablet_preview.jpg" />
+<img src="dist/img/fcc-product-landing-page-tablet-preview.png" />
 
-# Mobile preview:
-<img src="dist/img/fcc_tribute_page_mobile_preview.jpg"/>
+<table>
+  <tr>
+    <td colspan="2">Mobile Preview</td>
+  </tr>
+  <tr>
+    <td><img src="dist/img/fcc-product-landing-page-mobile-preview-1.png"></td>
+    <td><img src="dist/img/fcc-product-landing-page-mobile-preview-2.png"></td>
+  </tr>
+ </table>
 
 # Built with:
 * HTML5, CSS3/SASS [Animations & Flex Layout], Vanilla Javascript
 * [Google Fonts: Varela Round](https://fonts.google.com/specimen/Varela+Round)
-* [SVG Icons [Font Awesome]](https://fontawesome.com/)
+* [Bootstrap v5.3 Icons](https://getbootstrap.com/docs/5.3/extend/icons/)
 
 # Browser support:
-(Last updated and tested: 19/06/2025)
+(Last updated and tested: 25/06/2025)
 * Chrome 137.0.7151.120 (Official Build) (64-bit)
 * Firefox 139.0.4 (64-bit)
 * Opera 119.0.5497.110 (64-bit)
@@ -31,24 +38,27 @@ I've recreated some of the sections from https://certificates.dev/vuejs.
 
 # W3C HTML Validator
 
-<img src="dist/img/fcc_tribute_page_w3c_html_validator.png" />
+<img src="dist/img/fcc-product-landing-page-w3-html-validator.png" />
 
 # W3C CSS Validator
 
-<img src="dist/img/fcc_tribute_page_w3c_css_validator.png" />
+<img src="dist/img/fcc-product-landing-page-w3c-css-validator.png" />
 
 # Chrome LightHouse Audit
 
-* Desktop & Mobile:
-<img src="dist/img/fcc_tribute_page_desktop_&_mobile_LightHouse_Audit.jpg" />
+* Desktop:
+<img src="dist/img/fcc-product-landing-page-desktop-light-house-audit.jpg" />
+
+* Mobile:
+<img src="dist/img/fcc-product-landing-page-mobile_light-house-audit.jpg" />
 
 # PageSpeed Insights Results
 
 * Desktop:
-<img src="dist/img/PageSpeed_Insights_desktop.jpg" />
+<img src="dist/img/fcc-product-landing-page-pagespeed_insights_desktop.png" />
 
 * Mobile:
-<img src="dist/img/PageSpeed_Insights_mobile.jpg" />
+<img src="dist/img/fcc-product-landing-page-pagespeed_insights_mobile.png" />
 
 # Resources used:
 
