@@ -1,5 +1,6 @@
 # FCC: Build a Product Landing Page
 I've recreated some of the sections from https://certificates.dev/vuejs.
+
 [Codepen](https://codepen.io/ralitsavoronevska/pen/GgJKYWp) | [Live Preview](https://ralitsavoronevska.github.io/fcc-product-landing-page/)
 
 # Desktop preview:
