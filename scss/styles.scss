@@ -43,11 +43,6 @@ li {
   list-style: none;
 }
 
-a:not(.nav-link, .hero-link, .btn-gradient) {
-  color: var(--text-inverted) !important;
-  text-decoration: none !important;
-}
-
 h2 {
   &.text-center {
     margin-top: 8rem !important;
@@ -287,15 +282,15 @@ header {
         li {
           text-align: center;
           margin: 10px auto;
+          color: rgba(255, 255, 255, 0.7);
           .nav-link {
             font-size: 1.125rem;
-            color: rgba(255, 255, 255, 0.7);
-            &:hover {
-              color: rgba(255, 255, 255, 1);
-            }
             @media (max-width: 767px) {
               font-size: 1rem;
             }
+          }
+          &:hover {
+            color: rgba(255, 255, 255, 1);
           }
         }
       }
@@ -383,7 +378,7 @@ body:has(#chkToggle:checked) {
       padding: 8px;
       border-radius: var(--border-radius);
     }
-    input[type='submit'] {
+    #submit {
       max-width: 150px;
       width: 100%;
       margin: 15px 0;
@@ -401,7 +396,7 @@ body:has(#chkToggle:checked) {
         border-bottom-right-radius: 0;
         border: 3px solid var(--primary);
       }
-      input[type='submit'] {
+      #submit {
         height: 2.85rem;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
