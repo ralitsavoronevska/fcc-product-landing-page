@@ -286,10 +286,7 @@ header {
           margin: 10px auto;
           color: rgba(255, 255, 255, 0.7);
           .nav-link {
-            font-size: 1.125rem;
-            @media (max-width: 767px) {
-              font-size: 1rem;
-            }
+            font-size: 1rem;
           }
           &:hover {
             color: rgba(255, 255, 255, 1);
