@@ -522,8 +522,8 @@ body:has(#chkToggle:checked) .main-nav {
 /** Footer styling **/
 footer {
   padding: 1rem;
-  margin-top: 4rem;
-  min-height: 6rem; }
+  margin-top: 2rem;
+  min-height: 4rem; }
   footer > ul > li {
     padding: 0 10px; }
   footer a {
