@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- async CSS (optionally increase loading priority with fetchpriority="high") -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="low">
 
     <!-- no-JS fallback -->
     <noscript>
@@ -54,7 +54,7 @@
           <p class="text-center mt-2">The official certification of competence for the Vue.js - The Progressive Front-end JavaScript Framework.</p>
           <form id="form" name="email-form" class="d-flex align-items-center justify-content-center flex-md-row my-3" action="https://www.freecodecamp.com/email-submit">
             <input id="email" name="email" type="email" placeholder="Enter your email address" required aria-label="Email" autocomplete="off" />
-            <input id="submit" name="submit" type="submit" value="Get Started" class="btn btn-primary fw-bold text-uppercase" aria-label="Submit" />
+            <button id="submit" name="submit" type="submit" class="btn btn-primary fw-bold text-uppercase" aria-label="Submit">Get Started</button>
           </form>
           <p class="text-center partners mt-2">
             Powered by <a href="https://vueschool.io" target="_blank" class="hero-link text-decoration-underline"> Vue School</a>&nbsp; <span>in partnership with <span>the </span></span><a href="https://vuejs.org/" target="_blank" class="hero-link text-decoration-underline">Vue.js</a><span> organisation</span>
@@ -316,7 +316,7 @@
                           </svg>Trial Exam</li>
                       </ol>
                     </div>
-                    <a href="#" class="btn btn-primary fw-bold text-uppercase">Buy</a>
+                    <button class="btn btn-primary fw-bold text-uppercase">Buy</button>
                   </div>
                 </div>
               </div>
@@ -459,7 +459,7 @@
                           </svg>Trial Exam</li>
                       </ol>
                     </div>
-                    <a href="#" class="btn btn-primary fw-bold text-uppercase">Buy</a>
+                    <button class="btn btn-primary fw-bold text-uppercase">Buy</button>
                   </div>
                 </div>
               </div>
