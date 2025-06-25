@@ -16,10 +16,14 @@ function switchUnchecked() {
   header.style.boxShadow = "3px 3px 12px rgba(66, 184, 131, .25)";
   seniorLevel.classList.remove(...outline);
   midLevel.classList.add(...outline);
-  seniorLevelHeading.classList.remove(...text).add("grayed-out-text");
-  midLevelHeading.classList.remove("grayed-out-text").add(...text);
-  productsSeniorLevel.classList.remove("d-flex").add("d-none");
-  productsMidLevel.classList.remove("d-none").add("d-flex");
+  seniorLevelHeading.classList.remove(...text);
+  seniorLevelHeading.classList.add("grayed-out-text");
+  midLevelHeading.classList.remove("grayed-out-text");
+  midLevelHeading.classList.add(...text);
+  productsSeniorLevel.classList.remove("d-flex");
+  productsSeniorLevel.classList.add("d-none");
+  productsMidLevel.classList.remove("d-none");
+  productsMidLevel.classList.add("d-flex");
 }
 
 function switchChecked() {
@@ -28,10 +32,14 @@ function switchChecked() {
   header.style.boxShadow = "3px 3px 12px rgba(248, 100, 189, .25)";
   midLevel.classList.remove(...outline);
   seniorLevel.classList.add(...outline);
-  midLevelHeading.classList.remove(...text).add("grayed-out-text");
-  productsMidLevel.classList.remove("d-flex").add("d-none");
-  productsSeniorLevel.classList.remove("d-none").add("d-flex");
-  seniorLevelHeading.classList.remove("grayed-out-text").add(...text);
+  midLevelHeading.classList.remove(...text);
+  midLevelHeading.classList.add("grayed-out-text");
+  productsMidLevel.classList.remove("d-flex");
+  productsMidLevel.classList.add("d-none");
+  productsSeniorLevel.classList.remove("d-none");
+  productsSeniorLevel.classList.add("d-flex");
+  seniorLevelHeading.classList.remove("grayed-out-text");
+  seniorLevelHeading.classList.add(...text);
 }
 
 seniorLevel.addEventListener("click", (e) => {
