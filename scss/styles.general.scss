@@ -48,20 +48,11 @@ h2 {
     margin-top: 8rem !important;
     font-size: 2.125rem !important;
     margin-bottom: 0 !important;
-    @media (min-width: 768px) {
-      font-size: 2.5rem !important;
-    }
   }
 }
 
 header, .container {
   content-visibility: auto;
-}
-
-.img-fluid {
-  @media (min-width: 768px) {
-    width: 50% !important;
-  }
 }
 
 .btn {
@@ -86,11 +77,6 @@ header, .container {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-timing-function: cubic-bezier(.4,0,1,1);
-  @media (min-width: 768px) {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-  }
   &:hover {
     --tw-gradient-to: var(--secondary) var(--tw-gradient-to-position);
     transition: background-color 1s;
@@ -238,10 +224,6 @@ svg {
       margin-right: 6px;
       width: 1rem;
       height: 1rem;
-      @media (min-width: 768px) {
-        width: 1.25rem;
-        height: 1.25rem;
-      }
     }
   }
 }
@@ -314,14 +296,6 @@ body:has(#chkToggle:checked) {
     padding-left: 0;
     margin-bottom: 0;
   }
-  @media (min-width: 768px) {
-    .navbar {
-      justify-content: space-between !important;
-      .logo {
-        position: relative;
-      }
-    } 
-  }
   @media (max-width: 767px) {
     #hero {
       margin-top: 12rem;
@@ -329,43 +303,12 @@ body:has(#chkToggle:checked) {
   }
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0 !important;
-    height: 70px;
-    .navbar-toggle {
-      display: none;
-    }
-    .logo {
-      margin-top: 0;
-    }
-  }
-  #chkToggle:checked + ul.main-nav {
-    display: flex;
-  }
-  .main-nav {
-    padding-right: 30px;
-    margin-bottom: 0;
-    gap: 4rem;
-    li {
-      margin: 0;
-    }
-  }
-}
-
 /** Hero Section styling **/
 #hero {
   margin: 10rem 1rem 0 1rem;
-  @media (min-width: 768px) {
-    margin-top: 13rem;
-  }
   h1 {
     font-size: 2.25rem;
     word-wrap: break-word;
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
   }
   #form {
     gap: 0;
@@ -386,19 +329,6 @@ body:has(#chkToggle:checked) {
       background-color: var(--primary);
       &:hover {
         transition: background-color 1s;
-      }
-    }
-    @media (min-width: 768px) {
-      width: calc(100% / 1.5);
-      input[type='email'] {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border: 3px solid var(--primary);
-      }
-      #submit {
-        height: 2.85rem;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
       }
     }
   }
@@ -434,15 +364,6 @@ body:has(#chkToggle:checked) {
       ol {
         li {
           font-size: .875rem;
-          @media (min-width: 768px) {
-            font-size: 1rem;
-          }
-          @media (min-width: 991px) {
-            font-size: .875rem;
-          }
-          @media (min-width: 1280px) {
-            font-size: 1rem;
-          }
         }
       }
     }
@@ -476,12 +397,6 @@ body:has(#chkToggle:checked) {
     .details {
       color: var(--text-primary);
       padding: 0 1rem;
-      @media (min-width: 768px) and (max-width: 991px) {
-        gap: 1.5rem !important;
-      }
-      @media (min-width: 1400px) {
-        gap: 1.5rem !important;  
-      }
     }
   }
   .icon {
@@ -517,17 +432,9 @@ body:has(#chkToggle:checked) {
     padding: .875rem;
     margin: .875rem;
     background-color: var(--bg-gray);
-    @media (min-width: 768px) {
-      width: 15rem;
-      padding: 2rem;
-      margin: 1rem 2rem;
-    }
     .levels-content {
       font-size: 1.25rem;
       color: var(--text-gray);
-      @media (min-width: 768px) {
-        font-size: 1.875rem;
-      }
     }
   }
   .form-switch {
@@ -537,9 +444,6 @@ body:has(#chkToggle:checked) {
       min-height: unset;
       margin-bottom: 0;
       padding-left: 0;
-      @media (min-width: 768px) {
-        width: 3.5rem;
-      }
     }
     .form-check-input {
       float: none;
@@ -565,32 +469,13 @@ body:has(#chkToggle:checked) {
         box-shadow: 0 0 0 .25rem rgba(53, 146, 104, .25);
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important;
       }
-      @media (min-width: 768px) {
-        width: 3.5rem;
-      }
     }
   }
   /** Pricing Section styling **/
   .products-container {
     flex-direction: column;
     gap: 3rem;
-    @media (min-width: 991px) {
-      flex-direction: row;
-      gap: 2rem;
-    }
-    @media (min-width: 1280px) {
-      gap: 4rem;
-    }
     .card {
-      @media (min-width: 768px) {
-        min-width: 600px;
-      }
-      @media (min-width: 991px) {
-        min-width: 275px;
-      }
-      @media (min-width: 1280px) {
-        min-width: calc(100% / 3.325);
-      }
       .card-header {
         background-color: var(--primary);
         border-top-left-radius: 1.25rem;
@@ -610,19 +495,10 @@ body:has(#chkToggle:checked) {
         border-top-right-radius: var(--levels-border-radius);
         .product-coverage {
           font-size: 1rem;
-          @media (min-width: 768px) {
-            font-size: 1.5rem
-          }
-          @media (min-width: 991px) {
-            font-size: 1.25rem
-          }
         }
       }
       .product-price {
         font-size: 1.5rem;
-        @media (min-width: 768px) {
-          font-size: 2.5rem
-        }
       }
       .btn-primary-effect {
         border: 1px solid var(--primary);

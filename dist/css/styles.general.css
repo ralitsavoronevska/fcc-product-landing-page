@@ -42,16 +42,9 @@ h2.text-center {
   margin-top: 8rem !important;
   font-size: 2.125rem !important;
   margin-bottom: 0 !important; }
-  @media (min-width: 768px) {
-    h2.text-center {
-      font-size: 2.5rem !important; } }
 
 header, .container {
   content-visibility: auto; }
-
-@media (min-width: 768px) {
-  .img-fluid {
-    width: 50% !important; } }
 
 .btn {
   padding: 15px 40px !important;
@@ -74,11 +67,6 @@ header, .container {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
-  @media (min-width: 768px) {
-    .btn-primary-effect {
-      width: 100%;
-      display: inline-flex;
-      justify-content: center; } }
   .btn-primary-effect:hover {
     --tw-gradient-to: var(--secondary) var(--tw-gradient-to-position);
     transition: background-color 1s; }
@@ -191,10 +179,6 @@ svg.bi {
     margin-right: 6px;
     width: 1rem;
     height: 1rem; }
-    @media (min-width: 768px) {
-      svg.bi.bi-circle-check {
-        width: 1.25rem;
-        height: 1.25rem; } }
 
 /** header and navigation styling **/
 header {
@@ -250,46 +234,16 @@ body:has(#chkToggle:checked) .main-nav {
   padding-left: 0;
   margin-bottom: 0; }
 
-@media (min-width: 768px) {
-  body:has(#chkToggle:checked) .navbar {
-    justify-content: space-between !important; }
-    body:has(#chkToggle:checked) .navbar .logo {
-      position: relative; } }
-
 @media (max-width: 767px) {
   body:has(#chkToggle:checked) #hero {
     margin-top: 12rem; } }
 
-@media (min-width: 768px) {
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0 !important;
-    height: 70px; }
-    .navbar .navbar-toggle {
-      display: none; }
-    .navbar .logo {
-      margin-top: 0; }
-  #chkToggle:checked + ul.main-nav {
-    display: flex; }
-  .main-nav {
-    padding-right: 30px;
-    margin-bottom: 0;
-    gap: 4rem; }
-    .main-nav li {
-      margin: 0; } }
-
 /** Hero Section styling **/
 #hero {
   margin: 10rem 1rem 0 1rem; }
-  @media (min-width: 768px) {
-    #hero {
-      margin-top: 13rem; } }
   #hero h1 {
     font-size: 2.25rem;
     word-wrap: break-word; }
-    @media (min-width: 768px) {
-      #hero h1 {
-        font-size: 2.5rem; } }
   #hero #form {
     gap: 0;
     width: 100%;
@@ -308,17 +262,6 @@ body:has(#chkToggle:checked) .main-nav {
       background-color: var(--primary); }
       #hero #form #submit:hover {
         transition: background-color 1s; }
-    @media (min-width: 768px) {
-      #hero #form {
-        width: calc(100% / 1.5); }
-        #hero #form input[type='email'] {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          border: 3px solid var(--primary); }
-        #hero #form #submit {
-          height: 2.85rem;
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0; } }
   #hero .partners {
     color: var(--text-gray); }
     #hero .partners a {
@@ -341,15 +284,6 @@ body:has(#chkToggle:checked) .main-nav {
     color: var(--text-gray); }
   .card .card-body .level-container ol li {
     font-size: .875rem; }
-    @media (min-width: 768px) {
-      .card .card-body .level-container ol li {
-        font-size: 1rem; } }
-    @media (min-width: 991px) {
-      .card .card-body .level-container ol li {
-        font-size: .875rem; } }
-    @media (min-width: 1280px) {
-      .card .card-body .level-container ol li {
-        font-size: 1rem; } }
 
 /** Steps to Certification Section & Certificates Section styling **/
 #steps-to-certification .certification-container, #steps-to-certification .certificates-container, #certificates .certification-container, #certificates .certificates-container {
@@ -368,12 +302,6 @@ body:has(#chkToggle:checked) .main-nav {
 #steps-to-certification .card .details, #certificates .card .details {
   color: var(--text-primary);
   padding: 0 1rem; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    #steps-to-certification .card .details, #certificates .card .details {
-      gap: 1.5rem !important; } }
-  @media (min-width: 1400px) {
-    #steps-to-certification .card .details, #certificates .card .details {
-      gap: 1.5rem !important; } }
 
 #steps-to-certification .icon, #certificates .icon {
   padding: 35px 10px 0 10px; }
@@ -407,26 +335,15 @@ body:has(#chkToggle:checked) .main-nav {
     padding: .875rem;
     margin: .875rem;
     background-color: var(--bg-gray); }
-    @media (min-width: 768px) {
-      #switch-for-levels .levels-container {
-        width: 15rem;
-        padding: 2rem;
-        margin: 1rem 2rem; } }
     #switch-for-levels .levels-container .levels-content {
       font-size: 1.25rem;
       color: var(--text-gray); }
-      @media (min-width: 768px) {
-        #switch-for-levels .levels-container .levels-content {
-          font-size: 1.875rem; } }
   #switch-for-levels .form-switch.form-check {
     width: 2.5rem;
     height: 1.5rem;
     min-height: unset;
     margin-bottom: 0;
     padding-left: 0; }
-    @media (min-width: 768px) {
-      #switch-for-levels .form-switch.form-check {
-        width: 3.5rem; } }
   #switch-for-levels .form-switch .form-check-input {
     float: none;
     margin-top: 0;
@@ -448,28 +365,9 @@ body:has(#chkToggle:checked) .main-nav {
       border-color: var(--dark-green);
       box-shadow: 0 0 0 0.25rem rgba(53, 146, 104, 0.25);
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important; }
-    @media (min-width: 768px) {
-      #switch-for-levels .form-switch .form-check-input {
-        width: 3.5rem; } }
   #switch-for-levels .products-container {
     flex-direction: column;
     gap: 3rem; }
-    @media (min-width: 991px) {
-      #switch-for-levels .products-container {
-        flex-direction: row;
-        gap: 2rem; } }
-    @media (min-width: 1280px) {
-      #switch-for-levels .products-container {
-        gap: 4rem; } }
-    @media (min-width: 768px) {
-      #switch-for-levels .products-container .card {
-        min-width: 600px; } }
-    @media (min-width: 991px) {
-      #switch-for-levels .products-container .card {
-        min-width: 275px; } }
-    @media (min-width: 1280px) {
-      #switch-for-levels .products-container .card {
-        min-width: calc(100% / 3.325); } }
     #switch-for-levels .products-container .card .card-header {
       background-color: var(--primary);
       border-top-left-radius: 1.25rem;
@@ -487,17 +385,8 @@ body:has(#chkToggle:checked) .main-nav {
       border-top-right-radius: var(--levels-border-radius); }
       #switch-for-levels .products-container .card .level-content .product-coverage {
         font-size: 1rem; }
-        @media (min-width: 768px) {
-          #switch-for-levels .products-container .card .level-content .product-coverage {
-            font-size: 1.5rem; } }
-        @media (min-width: 991px) {
-          #switch-for-levels .products-container .card .level-content .product-coverage {
-            font-size: 1.25rem; } }
     #switch-for-levels .products-container .card .product-price {
       font-size: 1.5rem; }
-      @media (min-width: 768px) {
-        #switch-for-levels .products-container .card .product-price {
-          font-size: 2.5rem; } }
     #switch-for-levels .products-container .card .btn-primary-effect {
       border: 1px solid var(--primary); }
     #switch-for-levels .products-container .card:nth-child(2) {
