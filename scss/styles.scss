@@ -71,7 +71,7 @@ header, .container {
   cursor: pointer;
 }
 
-.btn-primary {
+.btn-primary-effect {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   gap: .5rem;
   border: 1px solid var(--primary);
@@ -80,6 +80,7 @@ header, .container {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--primary) var(--tw-gradient-to-position);
   color: var(--text-inverted) !important;
+  border: none !important;
   transition-duration: .2s;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -625,7 +626,7 @@ body:has(#chkToggle:checked) {
           font-size: 2.5rem
         }
       }
-      .btn-primary {
+      .btn-primary-effect {
         border: 1px solid var(--primary);
       }
       &:nth-child(2) {
@@ -663,6 +664,7 @@ footer {
     padding: 0 10px;
   }
   a {
+    color: var(--text-inverted);
     &:hover {
       color: var(--text-gray) !important;
     }
