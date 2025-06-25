@@ -1,6 +1,4 @@
 # FCC: Build a Product Landing Page
-I've recreated some of the sections from https://certificates.dev/vuejs.
-
 [Codepen](https://codepen.io/ralitsavoronevska/pen/GgJKYWp) | [Live Preview](https://ralitsavoronevska.github.io/fcc-product-landing-page/)
 
 # Desktop preview:
@@ -62,6 +60,7 @@ I've recreated some of the sections from https://certificates.dev/vuejs.
 <img src="dist/img/fcc-product-landing-page-pagespeed_insights_mobile.png" />
 
 # Resources used:
+I've recreated some of the sections from https://certificates.dev/vuejs.
 
 # FreeCodeCamp:
 # Responsive Web Design Projects - Build A Product Landing Page
