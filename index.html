@@ -16,6 +16,7 @@
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" as="script">
     <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="https://img.youtube.com/vi/8SQDZ-P-h3Q/sddefault.jpg" as="image" type="image/jpg">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -25,7 +26,7 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="low">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
     <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
     </noscript>
@@ -42,14 +43,14 @@
             </svg>
           </label>
           <a class="logo" href="https://certificates.dev/vuejs#top">
-            <svg id="header-img" class="d-flex align-items-center justify-content-center" height="50" width="50" role="img" loading="lazy" fill="none" viewBox="0 0 82 84" xmlns="http://www.w3.org/2000/svg" alt="Logo">
+            <svg id="header-img" class="d-flex align-items-center justify-content-center" height="50" width="50" role="img" fill="none" viewBox="0 0 82 84" xmlns="http://www.w3.org/2000/svg">
               <title xmlns="http://www.w3.org/2000/svg">Home</title>
               <path xmlns="http://www.w3.org/2000/svg" d="M0 36.2975L4.54024 42.2261L0 48.1495L6.0213 52.5485L3.31963 59.519L10.3317 62.0341L9.69332 69.4872L17.1242 69.9183L18.6053 77.2482L25.8574 75.5543L29.3302 82.1707L35.8112 78.4904L41 83.8543L46.1888 78.4904L52.6698 82.1707L56.1426 75.5543L63.3947 77.2482L64.8758 69.9183L72.3067 69.4872L71.6683 62.0341L78.6804 59.519L75.9787 52.5485L82 48.1495L77.4598 42.2261L82 36.2975L75.9787 31.8986L78.6804 24.9281L71.6683 22.4129L72.3067 14.9599L64.8758 14.5339L63.3947 7.20401L56.1426 8.89275L52.6698 2.28151L46.1888 5.9567L41 0.592773L35.8112 5.9567L29.3302 2.28151L25.8574 8.89275L18.6053 7.20401L17.1242 14.5339L9.69332 14.9599L10.3317 22.4129L3.31963 24.9281L6.0213 31.8986L0 36.2975Z" fill="white"></path>
               <path xmlns="http://www.w3.org/2000/svg" d="M20.9512 26.7803L40.691 60.3675L60.4309 26.7803L52.535 26.7803L40.691 46.9326L28.7484 26.7803L20.9512 26.7803Z" fill="#3DD491"></path>
               <path xmlns="http://www.w3.org/2000/svg" d="M28.8452 26.7803L40.7383 47.196L52.5331 26.7803L45.2596 26.7803L40.7383 34.6325L36.1187 26.7803L28.8452 26.7803Z" fill="#2C3D4F"></path>
             </svg>
           </a>
-          <input type="checkbox" id="chkToggle" aria-label="mobile hamburger button"></input>
+          <input type="checkbox" id="chkToggle" aria-label="mobile hamburger button">
           <nav id="nav-bar">
             <ul class="main-nav w-100 d-md-flex flex-md-row align-content-md-center justify-content-md-end" id="js-menu">
               <li><a class="nav-link" href="#steps-to-certification">Steps to Certification</a></li>
@@ -64,7 +65,7 @@
           <h1 class="text-center"><span class="gradient-text primary-text">Vue.js</span> Certification</h1>
           <p class="text-center mt-2">The official certification of competence for the Vue.js - The Progressive Front-end JavaScript Framework.</p>
           <form id="form" name="email-form" class="d-flex align-items-center justify-content-center flex-md-row my-3" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email address" required aria-label="Email" autocomplete="off" />
+            <input id="email" name="email" type="email" placeholder="Enter your email address" required aria-label="email" autocomplete="off">
             <button id="submit" type="submit" class="btn btn-primary-effect fw-bold text-uppercase">Get Started</button>
           </form>
           <p class="text-center partners mt-2">
@@ -118,8 +119,8 @@
             <div class="card-body">
               <p class="card-text mb-0">The online exam will consist of both multiple choice questions and practical coding exercises. Take the exam whenever convenient for you from the comfort of your home.</p>
               <div class="d-flex flex-column flex-md-row">
-                <img class="img-fluid" role="img" loading="lazy" src="img/exam-image-1.svg" width="640" height="360" alt="Exam image 1" title="Exam image 1"> 
-                <img class="img-fluid" role="img" loading="lazy" src="img/exam-image-2.svg" width="640" height="360" alt="Exam image 2" title="Exam image 2">
+                <img class="img-fluid" loading="lazy" src="img/exam-image-1.svg" width="640" height="360" alt="Exam image 1" title="Exam image 1"> 
+                <img class="img-fluid" loading="lazy" src="img/exam-image-2.svg" width="640" height="360" alt="Exam image 2" title="Exam image 2">
               </div>
             </div>
           </div>
@@ -130,13 +131,13 @@
             <div class="card mid-level w-100">
               <div class="card-header position-relative">
                 <div class="icon d-flex align-items-center justify-content-center">
-                  <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15" focusable="false" alt="certification badge">
+                  <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15" focusable="false">
                     <path xmlns="http://www.w3.org/2000/svg" d="M1.65191 24.788C0.745712 25.45 0.561516 26.7279 1.24387 27.6189L2.34016 29.0504C2.88988 29.7682 2.88967 30.7656 2.33966 31.4831L1.24507 32.9112C0.562141 33.8022 0.746136 35.0806 1.6526 35.7428L3.09914 36.7996C3.83044 37.3339 4.11145 38.2929 3.78415 39.1373L3.13358 40.8159C2.72723 41.8643 3.26476 43.0416 4.32316 43.4212L5.99648 44.0214C6.85053 44.3277 7.39136 45.1706 7.31393 46.0746L7.16069 47.8636C7.06459 48.9856 7.91333 49.9657 9.03754 50.031L10.8009 50.1333C11.7079 50.1859 12.4655 50.8433 12.6454 51.7338L12.9992 53.4844C13.2226 54.5902 14.3159 55.2924 15.4144 55.0358L17.1267 54.6359C18.0139 54.4287 18.9291 54.8473 19.3525 55.654L20.1752 57.2214C20.7006 58.2224 21.9506 58.5893 22.9337 58.031L24.4587 57.165C25.252 56.7146 26.2495 56.858 26.8838 57.5136L28.108 58.7791C28.8941 59.5917 30.1969 59.5917 30.983 58.7791L32.2072 57.5136C32.8414 56.858 33.839 56.7146 34.6323 57.165L36.1573 58.031C37.1404 58.5893 38.3904 58.2224 38.9158 57.2214L39.7385 55.654C40.1619 54.8473 41.0771 54.4287 41.9643 54.6359L43.6765 55.0358C44.7751 55.2924 45.8684 54.5902 46.0918 53.4844L46.4455 51.7338C46.6255 50.8433 47.3831 50.1859 48.2901 50.1333L50.0534 50.031C51.1776 49.9657 52.0264 48.9856 51.9303 47.8636L51.7771 46.0746C51.6996 45.1706 52.2405 44.3277 53.0945 44.0214L54.7678 43.4212C55.8262 43.0416 56.3638 41.8643 55.9574 40.8159L55.3068 39.1373C54.9795 38.2929 55.2605 37.3339 55.9918 36.7996L57.4384 35.7428C58.3448 35.0806 58.5288 33.8022 57.8459 32.9112L56.7513 31.4831C56.2013 30.7656 56.2011 29.7682 56.7508 29.0504L57.8471 27.6189C58.5295 26.7279 58.3453 25.45 57.4391 24.788L55.9918 23.7307C55.2605 23.1964 54.9795 22.2374 55.3068 21.3929L55.9574 19.7144C56.3638 18.666 55.8262 17.4887 54.7678 17.1091L53.0945 16.5089C52.2405 16.2025 51.6996 15.3596 51.7771 14.4556L51.9302 12.668C52.0263 11.5455 51.1767 10.5651 50.0519 10.5006L48.2912 10.3997C47.3837 10.3477 46.6254 9.69011 46.4453 8.79908L46.0915 7.04823C45.8682 5.94296 44.7758 5.24072 43.6776 5.49646L41.963 5.89573C41.0763 6.10219 40.1621 5.68384 39.7388 4.87792L38.9155 3.31058C38.3901 2.31038 37.1411 1.94361 36.1583 2.50091L34.6319 3.36652C33.8388 3.81629 32.8418 3.67268 32.2079 3.01734L30.983 1.75112C30.1969 0.938534 28.8941 0.938533 28.108 1.75112L26.8831 3.01734C26.2492 3.67268 25.2522 3.81629 24.4591 3.36652L22.9327 2.50091C21.9499 1.94361 20.7009 2.31038 20.1755 3.31058L19.3522 4.87792C18.9288 5.68384 18.0146 6.10219 17.128 5.89573L15.4134 5.49646C14.3152 5.24072 13.2228 5.94296 12.9994 7.04823L12.6457 8.79908C12.4656 9.69011 11.7073 10.3477 10.7998 10.3997L9.03904 10.5006C7.91424 10.5651 7.06466 11.5455 7.16081 12.668L7.31393 14.4556C7.39136 15.3596 6.85053 16.2025 5.99648 16.5089L4.32316 17.1091C3.26476 17.4887 2.72722 18.666 3.13358 19.7144L3.78415 21.3929C4.11145 22.2374 3.83044 23.1964 3.09914 23.7307L1.65191 24.788Z" fill="url(#paint0_linear_4752_39407)" fill-opacity="0.3"></path>
                     <path xmlns="http://www.w3.org/2000/svg" d="M15.098 19.1362L29.323 43.3399L43.548 19.1362H37.858L29.323 33.6584L20.7169 19.1362H15.098Z" fill="#3DD491"></path>
                     <path xmlns="http://www.w3.org/2000/svg" d="M20.7864 19.1362L29.3568 33.8483L37.8563 19.1362H32.6149L29.3568 24.7947L26.0278 19.1362H20.7864Z" fill="#2C3D4F"></path>
                     <defs xmlns="http://www.w3.org/2000/svg">
                       <linearGradient id="paint0_linear_4752_39407" x1="59.0909" y1="0.265137" x2="-11.7242" y2="21.9137" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#42B883"></stop>
+                        <stop offset="0" stop-color="#42B883"></stop>
                         <stop offset="0.0001" stop-color="#42B883"></stop>
                         <stop offset="1" stop-color="#0EBBD2"></stop>
                       </linearGradient>
@@ -175,13 +176,13 @@
             <div class="card senior-level w-100">
               <div class="card-header position-relative">
                 <div class="icon d-flex align-items-center justify-content-center">
-                  <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15" focusable="false" alt="certification badge">
+                  <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15" focusable="false">
                     <path xmlns="http://www.w3.org/2000/svg" d="M1.65191 24.788C0.745712 25.45 0.561516 26.7279 1.24387 27.6189L2.34016 29.0504C2.88988 29.7682 2.88967 30.7656 2.33966 31.4831L1.24507 32.9112C0.562141 33.8022 0.746136 35.0806 1.6526 35.7428L3.09914 36.7996C3.83044 37.3339 4.11145 38.2929 3.78415 39.1373L3.13358 40.8159C2.72723 41.8643 3.26476 43.0416 4.32316 43.4212L5.99648 44.0214C6.85053 44.3277 7.39136 45.1706 7.31393 46.0746L7.16069 47.8636C7.06459 48.9856 7.91333 49.9657 9.03754 50.031L10.8009 50.1333C11.7079 50.1859 12.4655 50.8433 12.6454 51.7338L12.9992 53.4844C13.2226 54.5902 14.3159 55.2924 15.4144 55.0358L17.1267 54.6359C18.0139 54.4287 18.9291 54.8473 19.3525 55.654L20.1752 57.2214C20.7006 58.2224 21.9506 58.5893 22.9337 58.031L24.4587 57.165C25.252 56.7146 26.2495 56.858 26.8838 57.5136L28.108 58.7791C28.8941 59.5917 30.1969 59.5917 30.983 58.7791L32.2072 57.5136C32.8414 56.858 33.839 56.7146 34.6323 57.165L36.1573 58.031C37.1404 58.5893 38.3904 58.2224 38.9158 57.2214L39.7385 55.654C40.1619 54.8473 41.0771 54.4287 41.9643 54.6359L43.6765 55.0358C44.7751 55.2924 45.8684 54.5902 46.0918 53.4844L46.4455 51.7338C46.6255 50.8433 47.3831 50.1859 48.2901 50.1333L50.0534 50.031C51.1776 49.9657 52.0264 48.9856 51.9303 47.8636L51.7771 46.0746C51.6996 45.1706 52.2405 44.3277 53.0945 44.0214L54.7678 43.4212C55.8262 43.0416 56.3638 41.8643 55.9574 40.8159L55.3068 39.1373C54.9795 38.2929 55.2605 37.3339 55.9918 36.7996L57.4384 35.7428C58.3448 35.0806 58.5288 33.8022 57.8459 32.9112L56.7513 31.4831C56.2013 30.7656 56.2011 29.7682 56.7508 29.0504L57.8471 27.6189C58.5295 26.7279 58.3453 25.45 57.4391 24.788L55.9918 23.7307C55.2605 23.1964 54.9795 22.2374 55.3068 21.3929L55.9574 19.7144C56.3638 18.666 55.8262 17.4887 54.7678 17.1091L53.0945 16.5089C52.2405 16.2025 51.6996 15.3596 51.7771 14.4556L51.9302 12.668C52.0263 11.5455 51.1767 10.5651 50.0519 10.5006L48.2912 10.3997C47.3837 10.3477 46.6254 9.69011 46.4453 8.79908L46.0915 7.04823C45.8682 5.94296 44.7758 5.24072 43.6776 5.49646L41.963 5.89573C41.0763 6.10219 40.1621 5.68384 39.7388 4.87792L38.9155 3.31058C38.3901 2.31038 37.1411 1.94361 36.1583 2.50091L34.6319 3.36652C33.8388 3.81629 32.8418 3.67268 32.2079 3.01734L30.983 1.75112C30.1969 0.938534 28.8941 0.938533 28.108 1.75112L26.8831 3.01734C26.2492 3.67268 25.2522 3.81629 24.4591 3.36652L22.9327 2.50091C21.9499 1.94361 20.7009 2.31038 20.1755 3.31058L19.3522 4.87792C18.9288 5.68384 18.0146 6.10219 17.128 5.89573L15.4134 5.49646C14.3152 5.24072 13.2228 5.94296 12.9994 7.04823L12.6457 8.79908C12.4656 9.69011 11.7073 10.3477 10.7998 10.3997L9.03904 10.5006C7.91424 10.5651 7.06466 11.5455 7.16081 12.668L7.31393 14.4556C7.39136 15.3596 6.85053 16.2025 5.99648 16.5089L4.32316 17.1091C3.26476 17.4887 2.72722 18.666 3.13358 19.7144L3.78415 21.3929C4.11145 22.2374 3.83044 23.1964 3.09914 23.7307L1.65191 24.788Z" fill="url(#paint0_linear_4752_34099)" fill-opacity="0.3"></path>
                     <path xmlns="http://www.w3.org/2000/svg" d="M15.098 19.1362L29.323 43.3399L43.548 19.1362H37.858L29.323 33.6584L20.7169 19.1362H15.098Z" fill="#3DD491"></path>
                     <path xmlns="http://www.w3.org/2000/svg" d="M20.7864 19.1362L29.3568 33.8483L37.8564 19.1362H32.615L29.3568 24.7947L26.0278 19.1362H20.7864Z" fill="#2C3D4F"></path>
                     <defs xmlns="http://www.w3.org/2000/svg">
                       <linearGradient id="paint0_linear_4752_34099" x1="59.0909" y1="0.265137" x2="-11.7242" y2="21.9137" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F864BD"></stop>
+                        <stop offset="0" stop-color="#F864BD" ></stop>
                         <stop offset="1" stop-color="#4785FE"></stop>
                       </linearGradient>
                     </defs>
@@ -218,7 +219,7 @@
             </div>
           </div>
           <div class="video position-relative">
-            <iframe id="video" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><img src='https://img.youtube.com/vi/8SQDZ-P-h3Q/sddefault.jpg' alt='Certified Vue.js Developer: Chapter 1 Overview' loading='lazy'><span>▶</span></a>" preload="auto" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><img src='https://img.youtube.com/vi/8SQDZ-P-h3Q/sddefault.jpg' alt='Certified Vue.js Developer: Chapter 1 Overview' loading='lazy'><span>▶</span></a>" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
           </div>
         </section>
         <section id="switch-for-levels" class="d-flex flex-column align-items-center justify-content-center">
@@ -232,7 +233,7 @@
               </div>
             </div>
             <div class="form-check form-switch d-flex">
-              <input class="form-check-input" type="checkbox" role="switch" id="levels-toggle" aria-label="Toggle Button">
+              <input class="form-check-input" type="checkbox" role="switch" id="levels-toggle" aria-label="toggle button">
             </div>
             <div id="senior-level" class="levels-container position-relative">
               <div class="levels-content d-flex align-items-center justify-content-center">
@@ -544,7 +545,7 @@
         </p>
       </footer>
     </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
-  <script defer src="js/script.js"></script>
 </html>
