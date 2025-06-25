@@ -34,7 +34,7 @@ I've recreated some of the sections from https://certificates.dev/vuejs.
 * [W3C HTML Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [LightHouse Audit](https://developers.google.com/web/tools/lighthouse/)
-* [PageSpeed Insights Audit](https://developers.google.com/speed/pagespeed/insights/)
+* [PageSpeed Insights Audit](https://pagespeed.web.dev/)
 
 # W3C HTML Validator
 
