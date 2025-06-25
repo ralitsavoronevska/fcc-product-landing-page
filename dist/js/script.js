@@ -57,6 +57,6 @@ switchForLevels.addEventListener("change", (e) => {
   !switchForLevels.checked ? switchUnchecked() : switchChecked();
 });
 
-window.addEventListener("load", (event) => {
+window.addEventListener("load", (e) => {
   switchUnchecked();
-})
+});
