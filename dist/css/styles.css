@@ -309,32 +309,32 @@ body:has(#chkToggle:checked) .main-nav {
     @media (min-width: 768px) {
       #hero h1 {
         font-size: 2.5rem; } }
-  #hero #email-form {
+  #hero #form {
     gap: 0;
     width: 100%;
     flex-direction: column; }
-    #hero #email-form input[type='email'] {
+    #hero #form input[type='email'] {
       max-width: 275px;
       width: 100%;
       padding: 8px;
       border-radius: var(--border-radius); }
-    #hero #email-form input[type='submit'] {
+    #hero #form input[type='submit'] {
       max-width: 150px;
       width: 100%;
       margin: 15px 0;
       padding: 6px 12px !important;
       border: 0;
       background-color: var(--primary); }
-      #hero #email-form input[type='submit']:hover {
+      #hero #form input[type='submit']:hover {
         transition: background-color 1s; }
     @media (min-width: 768px) {
-      #hero #email-form {
+      #hero #form {
         width: calc(100% / 1.5); }
-        #hero #email-form input[type='email'] {
+        #hero #form input[type='email'] {
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
           border: 3px solid var(--primary); }
-        #hero #email-form input[type='submit'] {
+        #hero #form input[type='submit'] {
           height: 2.85rem;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0; } }
@@ -410,12 +410,15 @@ body:has(#chkToggle:checked) .main-nav {
   #steps-to-certification, #certificates {
     margin-top: 0; } }
 
-#steps-to-certification > iframe, #certificates > iframe {
-  border-radius: var(--levels-border-radius); }
-  @media (min-width: 768px) {
-    #steps-to-certification > iframe, #certificates > iframe {
-      height: 20rem;
-      max-width: 1300px; } }
+#steps-to-certification .video, #certificates .video {
+  padding-bottom: 56.25%; }
+  #steps-to-certification .video iframe, #certificates .video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    border-radius: var(--levels-border-radius); }
 
 /** Switch-For-Levels Section styling **/
 #switch-for-levels {
