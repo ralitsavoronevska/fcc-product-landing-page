@@ -1,12 +1,12 @@
-let switchForLevels = document.querySelector("#levels-toggle");
-let midLevel = document.querySelector("#mid-level");
-let midLevelHeading = document.querySelector(".heading-primary .fst-normal")
-let seniorLevel = document.querySelector("#senior-level");
-let seniorLevelHeading = document.querySelector(".heading-secondary .fst-normal");
-let productsMidLevel = document.querySelector("#pricing .mid-level");
-let productsSeniorLevel = document.querySelector("#pricing .senior-level");
-let root = document.querySelector(':root');
-let header = document.querySelector("#header");
+const switchForLevels = document.querySelector("#levels-toggle");
+const midLevel = document.querySelector("#mid-level");
+const midLevelHeading = document.querySelector(".heading-primary .fst-normal")
+const seniorLevel = document.querySelector("#senior-level");
+const seniorLevelHeading = document.querySelector(".heading-secondary .fst-normal");
+const productsMidLevel = document.querySelector("#pricing .mid-level");
+const productsSeniorLevel = document.querySelector("#pricing .senior-level");
+const root = document.querySelector(':root');
+const header = document.querySelector("#header");
 const outline = ["btn-outline", "primary-outline"];
 const text = ["gradient-text", "primary-text"];
 
