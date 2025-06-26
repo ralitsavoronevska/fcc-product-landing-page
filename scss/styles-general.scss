@@ -240,14 +240,14 @@ header {
     justify-content: flex-start;
     .navbar-toggle {
       top: 15px;
-      right: 20px;
+      right: 12px;
       cursor: pointer;
       color: rgba(255, 255, 255, 0.8);
       font-size: 1.5rem;
     }
     .logo {
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 12px;
       #header-img {
         width: 50px;
         height: 50px;
@@ -259,6 +259,7 @@ header {
     #nav-bar {
       .main-nav {
         display: none;
+        transition: all .3s ease-in-out;
         li {
           text-align: center;
           margin: 10px auto;
@@ -289,12 +290,14 @@ body:has(#chkToggle:checked) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 0;
+    padding-left: .875rem;
+    margin-top: .35rem;
     margin-bottom: 0;
+    transition: all .3s ease-in-out;
   }
   @media (max-width: 767px) {
     #hero {
-      margin-top: 12rem;
+      margin-top: 4rem;
     }
   }
 }
