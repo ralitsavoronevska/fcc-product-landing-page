@@ -206,8 +206,7 @@ header {
     header .navbar #chkToggle {
       display: none; }
     header .navbar #nav-bar .main-nav {
-      display: none;
-      transition: all .3s ease-in-out; }
+      display: none; }
       header .navbar #nav-bar .main-nav li {
         text-align: center;
         margin: 10px auto;
