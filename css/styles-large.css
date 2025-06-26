@@ -74,8 +74,8 @@
     font-size: .875rem; }
   /** Pricing Section styling **/
   .products-container {
-    flex-direction: row;
-    gap: 2rem; }
+    flex-direction: row !important;
+    gap: 2rem !important; }
     .products-container .card {
       min-width: 275px; }
       .products-container .card .product-coverage {
