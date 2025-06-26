@@ -36,7 +36,7 @@
   #hero h1 {
     font-size: 2.5rem; }
   #hero #form {
-    width: calc(100% / 1.5); }
+    width: calc(100% / 1.5) !important; }
     #hero #form input[type='email'] {
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
@@ -71,7 +71,6 @@
     font-size: .875rem; }
   /** Pricing Section styling **/
   .products-container {
-    flex-direction: row !important;
     gap: 2rem !important; }
     .products-container .card {
       min-width: 275px; }
