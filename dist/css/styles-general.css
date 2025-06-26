@@ -159,6 +159,10 @@ h2.text-center {
       .btn-gradient-container .btn-gradient.primary-gradient:after {
         background: linear-gradient(to left, var(--primary), var(--secondary)); }
 
+.img-fluid {
+  margin-top: 1rem;
+  border-radius: var(--levels-border-radius); }
+
 /** Bootstrap svg icons **/
 svg.bi {
   width: 2rem;

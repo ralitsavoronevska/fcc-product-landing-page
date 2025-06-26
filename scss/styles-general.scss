@@ -200,6 +200,11 @@ h2 {
   }
 }
 
+.img-fluid {
+  margin-top: 1rem;
+  border-radius: var(--levels-border-radius);
+}
+
 /** Bootstrap svg icons **/
 svg {
   &.bi {
