@@ -17,8 +17,8 @@
   /** Bootstrap svg icons **/
   svg {
     &.bi-circle-check {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 1.25rem !important;
+      height: 1.25rem !important;
     }
   }
   /** header and navigation styling **/
@@ -78,7 +78,7 @@
       .level-container {
         ol {
           li {
-            font-size: 1rem;
+            font-size: 1rem !important;
           }
         }
       }
@@ -88,15 +88,15 @@
   #switch-for-levels {
     .levels-container {
       width: 15rem;
-      padding: 2rem;
-      margin: 1rem 2rem;
+      padding: 2rem !important;
+      margin: 1rem 2rem !important;
       .levels-content {
-        font-size: 1.875rem;
+        font-size: 1.875rem !important;
       }
     }
     .form-switch {
       &.form-check, .form-check-input {
-        width: 3.5rem;
+        width: 3.5rem !important;
       }
     }
   }
@@ -105,10 +105,10 @@
     .card {
       min-width: 600px;
       .product-coverage {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
       }
       .product-price {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
       }
     }
   }
