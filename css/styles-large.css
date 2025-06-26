@@ -41,13 +41,13 @@
     #hero #form {
       width: calc(100% / 1.5); }
       #hero #form input[type='email'] {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
         border: 3px solid var(--primary); }
       #hero #form #submit {
         height: 2.85rem;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0; }
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important; }
   /** Common styles **/
   .card .card-body .level-container ol li {
     font-size: 1rem; }

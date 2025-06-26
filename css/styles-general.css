@@ -251,7 +251,7 @@ body:has(#chkToggle:checked) .main-nav {
     #hero #form input[type='email'] {
       max-width: 275px;
       width: 100%;
-      padding: 8px;
+      padding: .52rem;
       border-radius: var(--border-radius); }
     #hero #form #submit {
       max-width: 150px;
