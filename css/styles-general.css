@@ -237,28 +237,24 @@ body:has(#chkToggle:checked) .main-nav {
 
 /** Hero Section styling **/
 #hero {
-  margin: 10rem 1rem 0 1rem; }
+  margin: 0 1rem; }
   #hero h1 {
     font-size: 2.25rem;
-    word-wrap: break-word; }
-  #hero #form {
-    gap: 0;
+    margin-top: 8rem; }
+  #hero #form input[type='email'] {
+    max-width: 275px;
     width: 100%;
-    flex-direction: column; }
-    #hero #form input[type='email'] {
-      max-width: 275px;
-      width: 100%;
-      padding: .52rem;
-      border-radius: var(--border-radius); }
-    #hero #form #submit {
-      max-width: 150px;
-      width: 100%;
-      margin: 15px 0;
-      padding: 6px 12px !important;
-      border: 0;
-      background-color: var(--primary); }
-      #hero #form #submit:hover {
-        transition: background-color 1s; }
+    padding: .52rem;
+    border-radius: var(--border-radius); }
+  #hero #form #submit {
+    max-width: 150px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 6px 12px !important;
+    border: 0;
+    background-color: var(--primary); }
+    #hero #form #submit:hover {
+      transition: background-color 1s; }
   #hero .partners {
     color: var(--text-gray); }
     #hero .partners a {
@@ -284,7 +280,6 @@ body:has(#chkToggle:checked) .main-nav {
 
 /** Steps to Certification Section & Certificates Section styling **/
 #steps-to-certification .certification-container, #steps-to-certification .certificates-container, #certificates .certification-container, #certificates .certificates-container {
-  flex-direction: column;
   gap: 2rem; }
 
 #steps-to-certification .card .card-header, #certificates .card .card-header {
@@ -316,10 +311,6 @@ body:has(#chkToggle:checked) .main-nav {
 #steps-to-certification .video, #certificates .video {
   padding-bottom: 56.25%; }
   #steps-to-certification .video iframe, #certificates .video iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
     border: 0;
     border-radius: var(--levels-border-radius); }
 
@@ -363,7 +354,6 @@ body:has(#chkToggle:checked) .main-nav {
       box-shadow: 0 0 0 0.25rem rgba(53, 146, 104, 0.25);
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important; }
   #switch-for-levels .products-container {
-    flex-direction: column;
     gap: 3rem; }
     #switch-for-levels .products-container .card .card-header {
       background-color: var(--primary);
@@ -374,10 +364,8 @@ body:has(#chkToggle:checked) .main-nav {
     #switch-for-levels .products-container .card .level-label {
       top: 1.5rem;
       left: 2rem;
-      white-space: pre-wrap;
       color: var(--primary) !important; }
     #switch-for-levels .products-container .card .level-content {
-      width: 100%;
       border-top-left-radius: var(--levels-border-radius);
       border-top-right-radius: var(--levels-border-radius); }
       #switch-for-levels .products-container .card .level-content .product-coverage {
