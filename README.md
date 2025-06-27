@@ -46,18 +46,18 @@
 # Chrome LightHouse Audit
 
 * Desktop:
-<img src="dist/img/fcc-product-landing-page-desktop-light-house-audit.jpg" />
+<img src="dist/img/fcc-product-landing-page-desktop-light-house-audit.png" />
 
 * Mobile:
-<img src="dist/img/fcc-product-landing-page-mobile_light-house-audit.jpg" />
+<img src="dist/img/fcc-product-landing-page-mobile_light-house-audit.png" />
 
 # PageSpeed Insights Results
 
 * Desktop:
-<img src="dist/img/fcc-product-landing-page-pagespeed_insights_desktop.png" />
+<img src="dist/img/fcc-product-landing-page-pagespeed-insights-desktop.png" />
 
 * Mobile:
-<img src="dist/img/fcc-product-landing-page-pagespeed_insights_mobile.png" />
+<img src="dist/img/fcc-product-landing-page-pagespeed-insights-mobile.png" />
 
 # Resources used:
 I've recreated some of the sections from https://certificates.dev/vuejs.
