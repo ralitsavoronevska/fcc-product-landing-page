@@ -161,7 +161,12 @@ h2.text-center {
 
 .img-fluid {
   margin-top: 1rem;
-  border-radius: var(--levels-border-radius); }
+  border-radius: var(--levels-border-radius);
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2 / 1 !important;
+  object-fit: cover;
+  object-position: center; }
 
 /** Bootstrap svg icons **/
 svg.bi {
