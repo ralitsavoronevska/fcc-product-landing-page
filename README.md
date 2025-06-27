@@ -23,11 +23,11 @@
 * [Bootstrap v5.3 Icons](https://getbootstrap.com/docs/5.3/extend/icons/)
 
 # Browser support:
-(Last updated and tested: 25/06/2025)
+(Last updated and tested: 27/06/2025)
 * Chrome 137.0.7151.120 (Official Build) (64-bit)
-* Firefox 139.0.4 (64-bit)
-* Opera 119.0.5497.110 (64-bit)
-* Microsoft Edge 137.0.3296.83 (Official build) (64-bit)
+* Firefox 140.0.2 (64-bit)
+* Opera 119.0.5497.141 (64-bit)
+* Microsoft Edge 137.0.3296.93 (Official build) (64-bit)
 
 # Tools used:
 * [W3C HTML Validator](https://validator.w3.org/)
