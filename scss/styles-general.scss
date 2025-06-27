@@ -384,11 +384,16 @@ body:has(#chkToggle:checked) {
     .card-header {
       padding: 1rem;
     }
+    &.mid-level, &.senior-level {
+      &:hover {
+        transition: all .3s ease-in-out;
+      }
+    } 
     &.mid-level {
       &:hover {
         background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, .125));
         @extend .btn-outline;
-        @extend .primary-outline;
+        @extend .green-outline;
       }
     }
     &.senior-level {

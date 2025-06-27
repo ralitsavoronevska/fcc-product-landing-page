@@ -96,9 +96,9 @@ h2.text-center {
     z-index: -1;
     margin: -2px;
     border-radius: inherit; }
-  .btn-outline.primary-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .primary-outline.card.senior-level:hover:before, #certificates .primary-outline.card.senior-level:hover:before {
+  .btn-outline.primary-outline:before, #steps-to-certification .primary-outline.card.mid-level:hover:before, #certificates .primary-outline.card.mid-level:hover:before, #steps-to-certification .primary-outline.card.senior-level:hover:before, #certificates .primary-outline.card.senior-level:hover:before {
     background: linear-gradient(45deg, var(--primary), var(--secondary)) border-box; }
-  .btn-outline.green-outline:before, #steps-to-certification .green-outline.card.mid-level:hover:before, #certificates .green-outline.card.mid-level:hover:before, #steps-to-certification .green-outline.card.senior-level:hover:before, #certificates .green-outline.card.senior-level:hover:before {
+  .btn-outline.green-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .green-outline.card.senior-level:hover:before, #certificates .green-outline.card.senior-level:hover:before {
     background: linear-gradient(45deg, var(--green), var(--blue)) border-box; }
   .btn-outline.pink-outline:before, #steps-to-certification .pink-outline.card.mid-level:hover:before, #certificates .pink-outline.card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
     background: linear-gradient(45deg, var(--pink), var(--purple)) border-box; }
@@ -295,6 +295,9 @@ body:has(#chkToggle:checked) .main-nav {
 
 #steps-to-certification .card .card-header, #certificates .card .card-header {
   padding: 1rem; }
+
+#steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.mid-level:hover, #certificates .card.senior-level:hover {
+  transition: all .3s ease-in-out; }
 
 #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover {
   background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125)); }
