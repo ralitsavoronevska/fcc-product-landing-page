@@ -432,7 +432,7 @@ body:has(#menu-toggle:checked) {
       padding: 1rem;
     }
     &.mid-level, &.senior-level {
-      transition: all .3s ease-in-out;
+      transition: all .3s ease-in;
     } 
     &.mid-level {
       &:hover {

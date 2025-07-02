@@ -329,7 +329,7 @@ header {
   padding: 1rem; }
 
 #steps-to-certification .card.mid-level, #steps-to-certification .card.senior-level, #certificates .card.mid-level, #certificates .card.senior-level {
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in; }
 
 #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover {
   background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125)); }
