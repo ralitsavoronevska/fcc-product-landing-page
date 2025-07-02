@@ -7,13 +7,17 @@ const productsMidLevel = document.querySelector("#pricing .mid-level");
 const productsSeniorLevel = document.querySelector("#pricing .senior-level");
 const root = document.querySelector(':root');
 const header = document.querySelector("#header");
+const menu = document.querySelector(".menu");
+const greenBoxShadow = "3px 3px 12px rgba(66, 184, 131, .25)";
+const pinkBoxShadow = "3px 3px 12px rgba(248, 100, 189, .25)";
 const outline = ["btn-outline", "primary-outline"];
 const text = ["gradient-text", "primary-text"];
 
 function switchUnchecked() {
   root.style.setProperty('--primary', 'var(--green)');
   root.style.setProperty('--secondary', 'var(--blue)');
-  header.style.boxShadow = "3px 3px 12px rgba(66, 184, 131, .25)";
+  header.style.boxShadow = greenBoxShadow;
+  window.innerWidth < 768 ? menu.style.boxShadow = greenBoxShadow : '';
   seniorLevel.classList.remove(...outline);
   midLevel.classList.add(...outline);
   seniorLevelHeading.classList.remove(...text);
@@ -29,7 +33,8 @@ function switchUnchecked() {
 function switchChecked() {
   root.style.setProperty('--primary', 'var(--pink)');
   root.style.setProperty('--secondary', 'var(--purple)');
-  header.style.boxShadow = "3px 3px 12px rgba(248, 100, 189, .25)";
+  header.style.boxShadow = pinkBoxShadow;
+  window.innerWidth < 768 ? menu.style.boxShadow = pinkBoxShadow : '';
   midLevel.classList.remove(...outline);
   seniorLevel.classList.add(...outline);
   midLevelHeading.classList.remove(...text);
