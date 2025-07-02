@@ -12,26 +12,17 @@
     width: 1.25rem !important;
     height: 1.25rem !important; }
   /** header and navigation styling **/
-  body:has(#chkToggle:checked) .navbar {
-    justify-content: space-between !important; }
-    body:has(#chkToggle:checked) .navbar .logo {
-      position: relative; }
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0 !important;
-    height: 70px; }
-    .navbar .navbar-toggle {
-      display: none; }
-    .navbar .logo {
-      margin-top: 0; }
-  #chkToggle:checked + ul.main-nav {
-    display: flex; }
-  .main-nav {
-    padding-right: 30px;
-    margin-bottom: 0;
+  header #menu-toggle, header .menu-button-container {
+    display: none !important; }
+  header .menu {
+    position: relative;
     gap: 4rem; }
-    .main-nav li {
-      margin: 0; }
+    header .menu li:last-child {
+      margin-right: 1rem; }
+    header .menu li a {
+      color: rgba(255, 255, 255, 0.7); }
+      header .menu li a:hover {
+        color: white; }
   /** Hero Section styling **/
   #hero h1 {
     font-size: 2.5rem; }
