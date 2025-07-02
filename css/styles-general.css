@@ -298,11 +298,11 @@ header {
     background-color: var(--primary); }
     #hero #form #submit:hover {
       transition: background-color 1s; }
-  #hero .partners {
+  #hero .hero-partners {
     color: var(--text-gray); }
-    #hero .partners a {
+    #hero .hero-partners a {
       color: var(--text-gray); }
-      #hero .partners a:hover {
+      #hero .hero-partners a:hover {
         color: var(--primary); }
 
 /** Common styles **/

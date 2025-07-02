@@ -26,6 +26,8 @@
   /** Hero Section styling **/
   #hero h1 {
     font-size: 2.5rem; }
+  #hero .hero-text {
+    max-width: 425px; }
   #hero #form {
     width: calc(100% / 1.5) !important; }
     #hero #form input[type='email'] {
