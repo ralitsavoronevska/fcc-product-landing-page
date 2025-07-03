@@ -43,13 +43,18 @@ li {
 
 h2.text-center {
   margin-top: 6rem !important;
-  font-size: 2.125rem !important;
+  font-size: clamp(1.75rem, calc(3vw + 1rem), 2rem) !important;
   margin-bottom: 0 !important; }
+
+.border-radius {
+  border-radius: var(--border-radius) !important; }
+
+.levels-border-radius {
+  border-radius: var(--levels-border-radius) !important; }
 
 .btn {
   padding: 15px 40px !important;
   font-size: 1em !important;
-  border-radius: var(--border-radius);
   cursor: pointer;
   border: none !important;
   border-width: 0 !important; }
@@ -111,15 +116,13 @@ h2.text-center {
   background-image: none; }
 
 .btn-gradient-container {
-  background-color: var(--bg-gray);
-  border-radius: var(--border-radius); }
+  background-color: var(--bg-gray); }
   .btn-gradient-container .btn-gradient {
     padding: 15px 40px;
     border: none;
     outline: none;
     position: relative;
     z-index: 1;
-    border-radius: var(--border-radius);
     cursor: pointer;
     color: var(--text-primary) !important; }
     .btn-gradient-container .btn-gradient:before {
@@ -129,7 +132,7 @@ h2.text-center {
       right: 1px;
       top: 1px;
       bottom: 1px;
-      border-radius: var(--border-radius);
+      border-radius: inherit;
       background-color: var(--bg-gray);
       z-index: -1;
       transition: 200ms; }
@@ -161,15 +164,6 @@ h2.text-center {
       background: linear-gradient(to right, var(--primary), var(--secondary)); }
       .btn-gradient-container .btn-gradient.primary-gradient:after {
         background: linear-gradient(to left, var(--primary), var(--secondary)); }
-
-.img-fluid {
-  margin-top: 1rem;
-  border-radius: var(--levels-border-radius);
-  max-inline-size: 100%;
-  block-size: auto;
-  aspect-ratio: 2 / 1 !important;
-  object-fit: cover;
-  object-position: center; }
 
 /** Bootstrap svg icons **/
 svg.bi {
@@ -206,8 +200,6 @@ header {
   header .menu {
     margin: 0;
     padding: 0; }
-    header .menu > li {
-      margin: 0 1rem; }
   header #menu-toggle {
     appearance: none; }
   header .menu-button-container {
@@ -279,40 +271,38 @@ header {
       margin-top: 6rem; } }
 
 /** Hero Section styling **/
-#hero {
-  margin: 0 1rem; }
-  #hero h1 {
-    font-size: 2.25rem;
-    margin-top: 10rem; }
-  #hero #form input[type='email'] {
-    max-width: 275px;
-    width: 100%;
-    padding: .52rem;
-    border-radius: var(--border-radius); }
-  #hero #form #submit {
-    max-width: 150px;
-    width: 100%;
-    margin: 15px 0;
-    padding: 6px 12px !important;
-    border: 0;
-    background-color: var(--primary); }
-    #hero #form #submit:hover {
-      transition: background-color 1s; }
-  #hero .hero-partners {
+#hero h1 {
+  font-size: clamp(2rem, calc(3vw + 1rem), 2.5rem);
+  margin-top: 10rem; }
+
+#hero #form input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: .646rem; }
+
+#hero #form #submit {
+  max-width: 150px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 6px 12px !important;
+  border: 0;
+  background-color: var(--primary); }
+  #hero #form #submit:hover {
+    transition: background-color 1s; }
+
+#hero .hero-partners {
+  color: var(--text-gray); }
+  #hero .hero-partners a {
     color: var(--text-gray); }
-    #hero .hero-partners a {
-      color: var(--text-gray); }
-      #hero .hero-partners a:hover {
-        color: var(--primary); }
+    #hero .hero-partners a:hover {
+      color: var(--primary); }
 
 /** Common styles **/
 #steps-to-certification, #certificates, #switch-for-levels {
-  margin: 0 1rem;
   gap: 2rem; }
 
 .card {
   background-color: var(--bg-gray) !important;
-  border-radius: var(--levels-border-radius) !important;
   color: var(--text-primary) !important; }
   .card .card-header {
     border-bottom: none; }
@@ -332,10 +322,12 @@ header {
   transition: all .3s ease-in; }
 
 #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover {
-  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125)); }
+  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125));
+  transition: all .3s ease-in; }
 
 #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(127, 17, 224, 0.125)); }
+  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(127, 17, 224, 0.125));
+  transition: all .3s ease-in; }
 
 #steps-to-certification .card .details, #certificates .card .details {
   color: var(--text-primary);
@@ -350,21 +342,15 @@ header {
   white-space: pre-wrap;
   color: var(--primary) !important; }
 
-@media (max-width: 650px) {
-  #steps-to-certification, #certificates {
-    margin-top: 0; } }
-
 #steps-to-certification .video, #certificates .video {
   padding-bottom: 56.25%; }
   #steps-to-certification .video iframe, #certificates .video iframe {
-    border: 0;
-    border-radius: var(--levels-border-radius); }
+    border: 0; }
 
 /** Switch-For-Levels Section styling **/
 #switch-for-levels {
   /** Pricing Section styling **/ }
   #switch-for-levels .levels-container {
-    border-radius: var(--levels-border-radius);
     line-height: 2.25rem;
     padding: .875rem;
     margin: .875rem;
@@ -411,11 +397,8 @@ header {
       top: 1.5rem;
       left: 2rem;
       color: var(--primary) !important; }
-    #switch-for-levels .products-container .card .level-content {
-      border-top-left-radius: var(--levels-border-radius);
-      border-top-right-radius: var(--levels-border-radius); }
-      #switch-for-levels .products-container .card .level-content .product-coverage {
-        font-size: 1rem; }
+    #switch-for-levels .products-container .card .product-coverage {
+      font-size: 1rem; }
     #switch-for-levels .products-container .card .product-price {
       font-size: 1.5rem; }
     #switch-for-levels .products-container .card .btn-primary-effect {
