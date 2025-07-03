@@ -49,15 +49,23 @@ li {
 h2 {
   &.text-center {
     margin-top: 6rem !important;
-    font-size: 2.125rem !important;
+    // font-size: 2.125rem !important;
+    font-size: clamp(1.75rem, calc(3vw + 1rem), 2rem) !important;
     margin-bottom: 0 !important;
   }
+}
+
+.border-radius {
+  border-radius: var(--border-radius) !important;
+}
+
+.levels-border-radius {
+  border-radius: var(--levels-border-radius) !important;
 }
 
 .btn {
   padding: 15px 40px !important;
   font-size: 1em !important;
-  border-radius: var(--border-radius);
   cursor: pointer;
   border: none !important;
   border-width: 0 !important;
@@ -140,14 +148,12 @@ h2 {
 
 .btn-gradient-container {
   background-color: var(--bg-gray);
-  border-radius: var(--border-radius);
   .btn-gradient {
     padding: 15px 40px;
     border: none;
     outline: none;
     position: relative;
     z-index: 1;
-    border-radius: var(--border-radius);
     cursor: pointer;
     color: var(--text-primary) !important;
     &:before {
@@ -157,7 +163,7 @@ h2 {
       right: 1px;
       top: 1px;
       bottom: 1px;
-      border-radius: var(--border-radius);
+      border-radius: inherit;
       background-color: var(--bg-gray);
       z-index: -1;
       transition: 200ms;
@@ -203,16 +209,6 @@ h2 {
   }
 }
 
-.img-fluid {
-  margin-top: 1rem;
-  border-radius: var(--levels-border-radius);
-  max-inline-size: 100%;
-  block-size: auto;
-  aspect-ratio: 2 / 1 !important;
-  object-fit: cover;
-  object-position: center;
-}
-
 /** Bootstrap svg icons **/
 svg {
   &.bi {
@@ -255,9 +251,9 @@ header {
   .menu {
     margin: 0;
     padding: 0;
-    & > li {
-      margin: 0 1rem;
-    }
+    // & > li {
+    //   margin: 0 1rem;
+    // }
   }
   #menu-toggle {
     appearance: none;
@@ -360,17 +356,17 @@ body:has(#menu-toggle:checked) {
 
 /** Hero Section styling **/
 #hero {
-  margin: 0 1rem;
+  // margin: 0 1rem;
   h1 {
-    font-size: 2.25rem;
+    // font-size: 2.25rem;
+    font-size: clamp(2rem, calc(3vw + 1rem), 2.5rem);
     margin-top: 10rem;
   }
   #form {
     input[type='email'] {
       max-width: 275px;
       width: 100%;
-      padding: .52rem;
-      border-radius: var(--border-radius);
+      padding: .646rem;
     }
     #submit {
       max-width: 150px;
@@ -397,13 +393,12 @@ body:has(#menu-toggle:checked) {
 
 /** Common styles **/
 #steps-to-certification, #certificates, #switch-for-levels {
-  margin: 0 1rem;
+  // margin: 0 1rem;
   gap: 2rem;
 }
 
 .card {
   background-color: var(--bg-gray) !important;
-  border-radius: var(--levels-border-radius) !important;
   color: var(--text-primary) !important;
   .card-header {
     border-bottom: none;
@@ -439,6 +434,7 @@ body:has(#menu-toggle:checked) {
         background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, .125));
         @extend .btn-outline;
         @extend .green-outline;
+        transition: all .3s ease-in;
       }
     }
     &.senior-level {
@@ -446,6 +442,7 @@ body:has(#menu-toggle:checked) {
         background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(127, 17, 224, .125));
         @extend .btn-outline;
         @extend .pink-outline;
+        transition: all .3s ease-in;
       }
     }
     .details {
@@ -462,14 +459,10 @@ body:has(#menu-toggle:checked) {
     white-space: pre-wrap;
     color: var(--primary) !important;
   }
-  @media (max-width: 650px) {
-    margin-top: 0;
-  }
   .video {
     padding-bottom: 56.25%;
     iframe {
       border: 0;
-      border-radius: var(--levels-border-radius);
     }
   } 
 }
@@ -477,7 +470,6 @@ body:has(#menu-toggle:checked) {
 /** Switch-For-Levels Section styling **/
 #switch-for-levels {
   .levels-container {
-    border-radius: var(--levels-border-radius);
     line-height: 2.25rem;
     padding: .875rem;
     margin: .875rem;
@@ -537,12 +529,8 @@ body:has(#menu-toggle:checked) {
         left: 2rem;
         color: var(--primary) !important;
       }
-      .level-content {
-        border-top-left-radius: var(--levels-border-radius);
-        border-top-right-radius: var(--levels-border-radius);
-        .product-coverage {
-          font-size: 1rem;
-        }
+      .product-coverage {
+        font-size: 1rem;
       }
       .product-price {
         font-size: 1.5rem;

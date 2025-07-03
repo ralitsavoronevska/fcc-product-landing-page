@@ -1,11 +1,11 @@
 /** styling for @media (min-width: 768px) **/
 
 @media (min-width: 768px) {
-  h2 {
-    &.text-center {
-      font-size: 2.5rem !important;
-    }
-  }
+  // h2 {
+  //   &.text-center {
+  //     font-size: 2.5rem !important;
+  //   }
+  // }
   .img-fluid {
     width: 49.25% !important;
   }
@@ -43,9 +43,9 @@
   }
   /** Hero Section styling **/
   #hero {
-    h1 {
-      font-size: 2.5rem;
-    }
+    // h1 {
+    //   font-size: 2.5rem;
+    // }
     #form {
       width: calc(100% / 1.5) !important;
       input[type='email'] {
@@ -54,13 +54,13 @@
         border: 3px solid var(--primary);
       }
       #submit {
-        height: 2.90rem;
+        height: 3.125rem;
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
       }
     }
   }
-  /** Common styles **/
+  // /** Common styles **/
   .card {
     .card-body {
       .level-container {
