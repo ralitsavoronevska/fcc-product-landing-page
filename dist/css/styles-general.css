@@ -14,11 +14,6 @@
   --purple: #4785fe;
   --primary: var(--green);
   --secondary: var(--blue);
-  --tw-text-opacity: 1;
-  --tw-gradient-stops: ;
-  --tw-gradient-from-position: ;
-  --tw-gradient-via-position: ;
-  --tw-gradient-to-position: ;
   --border-radius: .5rem;
   --levels-border-radius: 1.5rem;
   --logo-fill: var(--white); }
@@ -55,26 +50,19 @@ h2.text-center {
 .btn {
   padding: 15px 40px !important;
   font-size: 1em !important;
-  cursor: pointer;
-  border: none !important;
-  border-width: 0 !important; }
-
-.btn-primary-effect {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  gap: .5rem;
-  border: 1px solid var(--primary);
-  --tw-gradient-from: var(--primary) var(--tw-gradient-from-position);
-  --tw-gradient-to: var(--primary) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: var(--primary) var(--tw-gradient-to-position);
-  color: var(--text-inverted) !important;
-  transition-duration: .2s;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
-  .btn-primary-effect:hover {
-    --tw-gradient-to: var(--secondary) var(--tw-gradient-to-position);
-    transition: background-color 1s; }
+  cursor: pointer; }
+  .btn.btn-primary-effect {
+    background-color: var(--primary);
+    gap: .5rem;
+    border: 1px solid var(--primary);
+    color: var(--text-inverted) !important;
+    transition-duration: .2s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+    .btn.btn-primary-effect:hover {
+      background-image: linear-gradient(to right, var(--primary), var(--secondary)) !important;
+      transition: background-image 1s !important; }
 
 .gradient-text {
   background-clip: text;
@@ -91,25 +79,13 @@ h2.text-center {
   background-image: linear-gradient(to right, var(--pink), var(--purple)); }
 
 .btn-outline, #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-  position: relative;
-  background-clip: padding-box;
-  border: solid 2px transparent; }
-  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    border-radius: inherit; }
-  .btn-outline.primary-outline:before, #steps-to-certification .primary-outline.card.mid-level:hover:before, #certificates .primary-outline.card.mid-level:hover:before, #steps-to-certification .primary-outline.card.senior-level:hover:before, #certificates .primary-outline.card.senior-level:hover:before {
-    background: linear-gradient(45deg, var(--primary), var(--secondary)) border-box; }
-  .btn-outline.green-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .green-outline.card.senior-level:hover:before, #certificates .green-outline.card.senior-level:hover:before {
-    background: linear-gradient(45deg, var(--green), var(--blue)) border-box; }
-  .btn-outline.pink-outline:before, #steps-to-certification .pink-outline.card.mid-level:hover:before, #certificates .pink-outline.card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
-    background: linear-gradient(45deg, var(--pink), var(--purple)) border-box; }
+  border-width: .2em; }
+  .btn-outline.primary-outline, #steps-to-certification .primary-outline.card.mid-level:hover, #certificates .primary-outline.card.mid-level:hover, #steps-to-certification .primary-outline.card.senior-level:hover, #certificates .primary-outline.card.senior-level:hover {
+    border-image: linear-gradient(to right, var(--primary), var(--secondary)) 1; }
+  .btn-outline.green-outline, #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover, #steps-to-certification .green-outline.card.senior-level:hover, #certificates .green-outline.card.senior-level:hover {
+    border-image: linear-gradient(to right, var(--green), var(--blue)) 1; }
+  .btn-outline.pink-outline, #steps-to-certification .pink-outline.card.mid-level:hover, #certificates .pink-outline.card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
+    border-image: linear-gradient(to right, var(--pink), var(--purple)) 1; }
 
 .grayed-out-text {
   color: var(--text-gray);
