@@ -1,53 +1,4 @@
-/** styling for @media (min-width: 768px) **/
-
-@media (min-width: 768px) {
-  // h2 {
-  //   &.text-center {
-  //     font-size: 2.5rem !important;
-  //   }
-  // }
-  .img-fluid {
-    width: 49.25% !important;
-  }
-  .btn-primary-effect {
-    width: 100%;
-    display: block;
-  }
-  /** Bootstrap svg icons **/
-  svg {
-    &.bi-circle-check {
-      width: 1.25rem !important;
-      height: 1.25rem !important;
-    }
-  }
-  /** header and navigation styling **/
-  header {
-    #menu-toggle, .menu-button-container {
-      display: none !important;
-    }
-    .menu {
-      position: relative;
-      gap: 4rem;
-      li {
-        &:last-child {
-          margin-right: 1rem;
-        }
-        a {
-          color: rgba(255, 255, 255, .7);
-          &:hover {
-            color: rgba(255, 255, 255, 1);
-          }
-        }
-      }
-    }
-  }
-  /** Hero Section styling **/
-  #hero {
-    // h1 {
-    //   font-size: 2.5rem;
-    // }
-    #form {
-      width: calc(100% / 1.5) !important;
+@media(min-width:768px){.img-fluid{width:49.25%!important}.btn-primary-effect{width:100%;display:block}svg{&.bi-circle-check{width:1.25rem!important;height:1.25rem!important}}header{#menu-toggle,.menu-button-container{display:none!important}.menu{position:relative;gap:4rem;li{&:last-child{margin-right:1rem}a{color:rgba(255,255,255,.7);&:hover{color:rgba(255,255,255,1)}}}}}#hero{#form{width:calc(100%/ 1.5) !important;
       input[type='email'] {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
@@ -60,19 +11,7 @@
       }
     }
   }
-  // /** Common styles **/
-  .card {
-    .card-body {
-      .level-container {
-        ol {
-          li {
-            font-size: 1rem !important;
-          }
-        }
-      }
-    }
-  }
-  /** Switch-For-Levels Section styling **/
+  /**Switch-For-Levels Section styling**/
   #switch-for-levels {
     .levels-container {
       width: 15rem;
@@ -88,47 +27,61 @@
       }
     }
   }
-  /** Pricing Section styling **/
-  .products-container {
+  /**Pricing Section styling**/
+  #pricing {
     .card {
-      min-width: 600px;
-      .product-coverage {
-        font-size: 1.5rem !important;
+      .card-body {
+        .level-container {
+          ol {
+            li {
+              font-size: 1rem !important;
+            }
+          }
+        }
       }
-      .product-price {
-        font-size: 2.5rem !important;
+    }
+    .products-container {
+      .card {
+        min-width: 600px;
+        .product-coverage {
+          font-size: 1.5rem !important;
+        }
+        .product-price {
+          font-size: 2.5rem !important;
+        }
       }
     }
   }
 }
 
 @media (min-width: 991px) {
-  /** Common styles **/
-  .card {
-    .card-body {
-      .level-container {
-        ol {
-          li {
-            font-size: .875rem;
+  /**Pricing Section styling**/
+  #pricing {
+    .card {
+      .card-body {
+        .level-container {
+          ol {
+            li {
+              font-size: .875rem;
+            }
           }
         }
       }
     }
-  }
-  /** Pricing Section styling **/
-  .products-container {
-    gap: 2rem !important;
-    .card {
-      min-width: 275px;
-      .product-coverage {
-        font-size: 1.25rem;
+    .products-container {
+      gap: 2rem !important;
+      .card {
+        min-width: 275px;
+        .product-coverage {
+          font-size: 1.25rem;
+        }
       }
     }
-  }
+  }   
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /** Steps to Certification Section & Certificates Section styling **/
+  /**Steps to Certification Section&Certificates Section styling**/
   #steps-to-certification, #certificates {
     .card {
       .details {
@@ -139,34 +92,20 @@
 }
 
 @media (min-width: 1280px) {
-  /** Common styles **/
-  .card {
-    .card-body {
-      .level-container {
-        ol {
-          li {
-            font-size: 1rem;
+  /**Pricing Section styling**/
+  #pricing {
+    .card {
+      .card-body {
+        .level-container {
+          ol {
+            li {
+              font-size: 1rem;
+            }
           }
         }
       }
     }
-  }
-  /** Pricing Section styling **/
-  .products-container {
-    gap: 4rem;
-    .card {
-      min-width: calc(100% / 3.325);
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  /** Steps to Certification Section & Certificates Section styling **/
-  #steps-to-certification, #certificates {
-    .card {
-      .details {
-        gap: 1.5rem !important;  
-      }
-    }
-  }
-}
+    .products-container {
+      gap: 4rem;
+      .card {
+        min-width: calc(100% /3.325)}}}};@media(min-width:1400px){#steps-to-certification,#certificates{.card{.details{gap:1.5rem!important}}}}
