@@ -1,15 +1,12 @@
-/** styling for @media (min-width: 768px) **/
 @media (min-width: 768px) {
   .img-fluid {
     width: 49.25% !important; }
   .btn-primary-effect {
     width: 100%;
     display: block; }
-  /** Bootstrap svg icons **/
   svg.bi-circle-check {
     width: 1.25rem !important;
     height: 1.25rem !important; }
-  /** header and navigation styling **/
   header #menu-toggle, header .menu-button-container {
     display: none !important; }
   header .menu {
@@ -21,9 +18,8 @@
       color: rgba(255, 255, 255, 0.7); }
       header .menu li a:hover {
         color: white; }
-  /** Hero Section styling **/
   #hero #form {
-    width: calc(100% / 1.5) !important; }
+    width: calc(100%/ 1.5) !important; }
     #hero #form input[type='email'] {
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
@@ -32,9 +28,7 @@
       height: 3.125rem;
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important; }
-  .card .card-body .level-container ol li {
-    font-size: 1rem !important; }
-  /** Switch-For-Levels Section styling **/
+  /**Switch-For-Levels Section styling**/
   #switch-for-levels .levels-container {
     width: 15rem;
     padding: 2rem !important;
@@ -43,42 +37,41 @@
       font-size: 1.875rem !important; }
   #switch-for-levels .form-switch.form-check, #switch-for-levels .form-switch .form-check-input {
     width: 3.5rem !important; }
-  /** Pricing Section styling **/
-  .products-container .card {
+  /**Pricing Section styling**/
+  #pricing .card .card-body .level-container ol li {
+    font-size: 1rem !important; }
+  #pricing .products-container .card {
     min-width: 600px; }
-    .products-container .card .product-coverage {
+    #pricing .products-container .card .product-coverage {
       font-size: 1.5rem !important; }
-    .products-container .card .product-price {
+    #pricing .products-container .card .product-price {
       font-size: 2.5rem !important; } }
 
 @media (min-width: 991px) {
-  /** Common styles **/
-  .card .card-body .level-container ol li {
+  /**Pricing Section styling**/
+  #pricing .card .card-body .level-container ol li {
     font-size: .875rem; }
-  /** Pricing Section styling **/
-  .products-container {
+  #pricing .products-container {
     gap: 2rem !important; }
-    .products-container .card {
+    #pricing .products-container .card {
       min-width: 275px; }
-      .products-container .card .product-coverage {
+      #pricing .products-container .card .product-coverage {
         font-size: 1.25rem; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /** Steps to Certification Section & Certificates Section styling **/
+  /**Steps to Certification Section&Certificates Section styling**/
   #steps-to-certification .card .details, #certificates .card .details {
     gap: 1.5rem !important; } }
 
 @media (min-width: 1280px) {
-  /** Common styles **/
-  .card .card-body .level-container ol li {
+  /**Pricing Section styling**/
+  #pricing .card .card-body .level-container ol li {
     font-size: 1rem; }
-  /** Pricing Section styling **/
-  .products-container {
+  #pricing .products-container {
     gap: 4rem; }
-    .products-container .card {
-      min-width: calc(100% / 3.325); } }
+    #pricing .products-container .card {
+      min-width: calc(100% /3.325); } }
 
 @media (min-width: 1400px) {
-  /** Steps to Certification Section & Certificates Section styling **/
   #steps-to-certification .card .details, #certificates .card .details {
     gap: 1.5rem !important; } }
