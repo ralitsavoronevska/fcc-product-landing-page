@@ -1,9 +1,6 @@
 @media (min-width: 768px) {
   #page-wrapper {
-    /** Bootstrap svg icons **/
-    /** header and navigation styling **/
-    /** Hero Section styling **/
-    /** Switch-For-Levels Section styling **/ }
+    /**Switch-For-Levels Section styling**/ }
     #page-wrapper .btn-primary-effect {
       width: 100%;
       display: block; }
@@ -22,7 +19,7 @@
         #page-wrapper header .menu li a:hover {
           color: white; }
     #page-wrapper #hero #form {
-      width: calc(100% / 1.5) !important; }
+      width: calc(100%/ 1.5) !important; }
       #page-wrapper #hero #form input[type='email'] {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
@@ -32,7 +29,7 @@
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important; }
     #page-wrapper #switch-for-levels {
-      /** Pricing Section styling **/ }
+      /**Pricing Section styling**/ }
       #page-wrapper #switch-for-levels .levels-container {
         width: 15rem;
         padding: 2rem;
@@ -43,10 +40,9 @@
         min-width: 600px; } }
 
 #page-wrapper {
-  /** Switch-For-Levels Section styling **/
-  /** Steps to Certification Section & Certificates Section styling **/ }
+  /**Switch-For-Levels Section styling**/ }
   #page-wrapper #switch-for-levels {
-    /** Pricing Section styling **/ }
+    /**Pricing Section styling**/ }
     @media (min-width: 991px) {
       #page-wrapper #switch-for-levels #pricing .products-container {
         gap: 2rem; }
@@ -59,7 +55,7 @@
       #page-wrapper #switch-for-levels #pricing .products-container {
         gap: 4rem; }
         #page-wrapper #switch-for-levels #pricing .products-container .card {
-          min-width: calc(100% / 3.325); } }
+          min-width: calc(100% /3.325); } }
   @media (min-width: 768px) and (max-width: 991px) {
     #page-wrapper #steps-to-certification .card .details, #page-wrapper #certificates .card .details {
       gap: 1.5rem; } }
