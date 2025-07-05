@@ -1,5 +1,5 @@
 # FCC: Build a Product Landing Page
-[Codepen](https://codepen.io/ralitsavoronevska/pen/GgJKYWp) | [Live Preview](https://ralitsavoronevska.github.io/fcc-product-landing-page/)
+[Codepen](https://codepen.io/ralitsataylor/pen/GgJKYWp) | [Live Preview](https://ralitsataylor.github.io/fcc-product-landing-page/)
 
 # Desktop preview:
 <img src="dist/img/fcc-product-landing-page-desktop-preview.png" />
