@@ -319,9 +319,6 @@ header {
   padding: 0 10px; }
 
 #steps-to-certification .level-label, #certificates .level-label {
-  top: 1rem;
-  left: 1rem;
-  white-space: pre-wrap;
   color: var(--primary) !important; }
 
 #steps-to-certification .video, #certificates .video {
