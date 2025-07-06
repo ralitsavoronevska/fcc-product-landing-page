@@ -31,14 +31,12 @@ body {
 
 ul {
   list-style-type: none; }
-
-li {
-  list-style: none; }
+  ul li {
+    list-style: none; }
 
 h2.text-center {
   margin-top: 6rem !important;
-  font-size: clamp(1.75rem, calc(3vw+1rem), 2rem);
-  margin-bottom: 0 !important; }
+  font-size: clamp(1.75rem, calc(3vw + 1rem), 2rem); }
 
 .border-radius {
   border-radius: var(--border-radius) !important; }
@@ -78,13 +76,25 @@ h2.text-center {
   background-image: linear-gradient(to right, var(--pink), var(--purple)); }
 
 .btn-outline, #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-  border-width: .2em; }
-  .btn-outline.primary-outline, #steps-to-certification .primary-outline.card.mid-level:hover, #certificates .primary-outline.card.mid-level:hover, #steps-to-certification .primary-outline.card.senior-level:hover, #certificates .primary-outline.card.senior-level:hover {
-    border-image: linear-gradient(to right, var(--primary), var(--secondary)) 1; }
-  .btn-outline.green-outline, #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover, #steps-to-certification .green-outline.card.senior-level:hover, #certificates .green-outline.card.senior-level:hover {
-    border-image: linear-gradient(to right, var(--green), var(--blue)) 1; }
-  .btn-outline.pink-outline, #steps-to-certification .pink-outline.card.mid-level:hover, #certificates .pink-outline.card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-    border-image: linear-gradient(to right, var(--pink), var(--purple)) 1; }
+  position: relative;
+  background-clip: padding-box;
+  border: solid 2px transparent; }
+  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit; }
+  .btn-outline.primary-outline:before, #steps-to-certification .primary-outline.card.mid-level:hover:before, #certificates .primary-outline.card.mid-level:hover:before, #steps-to-certification .primary-outline.card.senior-level:hover:before, #certificates .primary-outline.card.senior-level:hover:before {
+    background: linear-gradient(45deg, var(--primary), var(--secondary)) border-box; }
+  .btn-outline.green-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .green-outline.card.senior-level:hover:before, #certificates .green-outline.card.senior-level:hover:before {
+    background: linear-gradient(45deg, var(--green), var(--blue)) border-box; }
+  .btn-outline.pink-outline:before, #steps-to-certification .pink-outline.card.mid-level:hover:before, #certificates .pink-outline.card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
+    background: linear-gradient(45deg, var(--pink), var(--purple)) border-box; }
 
 .grayed-out-text {
   color: var(--text-gray);
@@ -242,7 +252,7 @@ header {
       margin-top: 6rem; } }
 
 #hero h1 {
-  font-size: clamp(2rem, calc(3vw+1rem), 2.5rem);
+  font-size: clamp(2rem, calc(3vw + 1rem), 2.5rem);
   margin-top: 10rem; }
 
 #hero #form input[type='email'] {
@@ -267,7 +277,7 @@ header {
     #hero .hero-partners a:hover {
       color: var(--primary); }
 
-#steps-to-certification, #certificates, #switch-for-levels {
+#certificates, #switch-for-levels {
   gap: 2rem; }
 
 .card {
@@ -280,7 +290,11 @@ header {
   .card .card-body .level-container ol li {
     font-size: .875rem; }
 
-#steps-to-certification .certification-container, #steps-to-certification .certificates-container, #certificates .certification-container, #certificates .certificates-container {
+.certification-container, .products-container {
+  grid-template-rows: initial;
+  gap: 3rem; }
+
+#steps-to-certification .certificates-container, #certificates .certificates-container {
   gap: 2rem; }
 
 #steps-to-certification .card .card-header, #certificates .card .card-header {
@@ -302,7 +316,7 @@ header {
   padding: 01rem; }
 
 #steps-to-certification .icon, #certificates .icon {
-  padding: 10px 10px 010px; }
+  padding: 0 10px; }
 
 #steps-to-certification .level-label, #certificates .level-label {
   top: 1rem;
@@ -353,45 +367,47 @@ header {
     box-shadow: 0.25rem rgba(53, 146, 104, 0.25);
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important; }
 
-#switch-for-levels .products-container {
-  gap: 3rem; }
-  #switch-for-levels .products-container .card .card-header {
-    background-color: var(--primary);
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-    color: var(--text-inverted);
-    letter-spacing: .0875rem; }
-  #switch-for-levels .products-container .card .level-label {
-    top: 1.5rem;
-    left: 2rem;
-    color: var(--primary) !important; }
-  #switch-for-levels .products-container .card .product-coverage {
-    font-size: clamp(1rem, 4vw, 1.5rem); }
-  #switch-for-levels .products-container .card .product-price {
-    font-size: clamp(1.5rem, 4vw, 2.5rem); }
-  #switch-for-levels .products-container .card .btn-primary-effect {
-    border: 1px solid var(--primary); }
-  #switch-for-levels .products-container .card:nth-child(2) {
-    border: 2px solid var(--primary); }
-    #switch-for-levels .products-container .card:nth-child(2) .level-label {
-      top: 3.85rem; }
-  #switch-for-levels .products-container .card > h2 {
-    margin-top: 15px; }
-  #switch-for-levels .products-container .card > ol {
-    padding-left: 0; }
-    #switch-for-levels .products-container .card > ol i {
-      margin-right: 6px; }
-    #switch-for-levels .products-container .card > ol > li {
-      padding: 5px 0; }
-  #switch-for-levels .products-container .card > button {
-    border: none;
-    margin: 15px 0; }
+#switch-for-levels .products-container .card .card-header {
+  background-color: var(--primary);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  color: var(--text-inverted);
+  letter-spacing: .0875rem; }
+
+#switch-for-levels .products-container .card .level-label {
+  color: var(--primary) !important; }
+
+#switch-for-levels .products-container .card .product-coverage {
+  font-size: clamp(1rem, 4vw, 1.5rem); }
+
+#switch-for-levels .products-container .card .product-price {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); }
+
+#switch-for-levels .products-container .card .btn-primary-effect {
+  border: 1px solid var(--primary); }
+
+#switch-for-levels .products-container .card:nth-child(2) {
+  border: 2px solid var(--primary); }
+
+#switch-for-levels .products-container .card > h2 {
+  margin-top: 15px; }
+
+#switch-for-levels .products-container .card > ol {
+  padding-left: 0; }
+  #switch-for-levels .products-container .card > ol i {
+    margin-right: 6px; }
+  #switch-for-levels .products-container .card > ol > li {
+    padding: 5px 0; }
+
+#switch-for-levels .products-container .card > button {
+  border: none;
+  margin: 15px 0; }
 
 footer {
   padding: 1rem;
   margin-top: 4rem; }
   footer > ul > li {
-    padding: 010px; }
+    padding: 0 10px; }
   footer a {
     color: var(--text-inverted); }
     footer a:hover {
