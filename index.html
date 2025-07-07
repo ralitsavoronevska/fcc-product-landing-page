@@ -13,21 +13,17 @@
     <link rel="icon" type="image/svg+xml" href="img/svgs/favicon.svg">
     <link rel="apple-touch-icon" href="img/svgs/favicon.svg">
 
-    <!-- Preloading Google Font and General Styles -->
+    <!-- Preloading Google Font, General Styles and Bootstrap -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
     <link rel="preload" href="css/styles-min.css" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
-
-    <!-- Preloading Bootstrap -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" as="style">
-
-    <!-- Bootstrap and Custom Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
 
     <!-- noscript fallbacks -->
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
       <link rel="stylesheet" href="css/styles-min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
     </noscript>
 
     <!-- dns prefetch of Google Font -->
@@ -37,23 +33,36 @@
   <body>
     <div id="page-wrapper" class="position-relative container">
       <header id="header" class="position-fixed d-flex flex-row align-items-center justify-content-between">
-        <div>
-          <svg id="header-img" class="d-flex align-items-center justify-content-center" height="50" width="50" role="img" fill="none" viewBox="0 0 82 84" xmlns="http://www.w3.org/2000/svg">
-            <title xmlns="http://www.w3.org/2000/svg">Home</title>
-            <path xmlns="http://www.w3.org/2000/svg" d="M0 36.2975L4.54024 42.2261L0 48.1495L6.0213 52.5485L3.31963 59.519L10.3317 62.0341L9.69332 69.4872L17.1242 69.9183L18.6053 77.2482L25.8574 75.5543L29.3302 82.1707L35.8112 78.4904L41 83.8543L46.1888 78.4904L52.6698 82.1707L56.1426 75.5543L63.3947 77.2482L64.8758 69.9183L72.3067 69.4872L71.6683 62.0341L78.6804 59.519L75.9787 52.5485L82 48.1495L77.4598 42.2261L82 36.2975L75.9787 31.8986L78.6804 24.9281L71.6683 22.4129L72.3067 14.9599L64.8758 14.5339L63.3947 7.20401L56.1426 8.89275L52.6698 2.28151L46.1888 5.9567L41 0.592773L35.8112 5.9567L29.3302 2.28151L25.8574 8.89275L18.6053 7.20401L17.1242 14.5339L9.69332 14.9599L10.3317 22.4129L3.31963 24.9281L6.0213 31.8986L0 36.2975Z"></path>
-            <path xmlns="http://www.w3.org/2000/svg" d="M20.9512 26.7803L40.691 60.3675L60.4309 26.7803L52.535 26.7803L40.691 46.9326L28.7484 26.7803L20.9512 26.7803Z" fill="#3DD491"></path>
-            <path xmlns="http://www.w3.org/2000/svg" d="M28.8452 26.7803L40.7383 47.196L52.5331 26.7803L45.2596 26.7803L40.7383 34.6325L36.1187 26.7803L28.8452 26.7803Z" fill="#2C3D4F"></path>
-          </svg>
+        <div class="header-wrapper w-100 d-flex align-items-center">
+          <a href="https://bato.dev/" target="_blank" class="header-logo">
+            <svg id="header-img" class="d-flex align-items-center justify-content-center" height="50" width="50" role="img" fill="none" viewBox="0 0 82 84" xmlns="http://www.w3.org/2000/svg">
+              <title xmlns="http://www.w3.org/2000/svg">Home</title>
+              <path xmlns="http://www.w3.org/2000/svg" d="M0 36.2975L4.54024 42.2261L0 48.1495L6.0213 52.5485L3.31963 59.519L10.3317 62.0341L9.69332 69.4872L17.1242 69.9183L18.6053 77.2482L25.8574 75.5543L29.3302 82.1707L35.8112 78.4904L41 83.8543L46.1888 78.4904L52.6698 82.1707L56.1426 75.5543L63.3947 77.2482L64.8758 69.9183L72.3067 69.4872L71.6683 62.0341L78.6804 59.519L75.9787 52.5485L82 48.1495L77.4598 42.2261L82 36.2975L75.9787 31.8986L78.6804 24.9281L71.6683 22.4129L72.3067 14.9599L64.8758 14.5339L63.3947 7.20401L56.1426 8.89275L52.6698 2.28151L46.1888 5.9567L41 0.592773L35.8112 5.9567L29.3302 2.28151L25.8574 8.89275L18.6053 7.20401L17.1242 14.5339L9.69332 14.9599L10.3317 22.4129L3.31963 24.9281L6.0213 31.8986L0 36.2975Z"></path>
+              <path xmlns="http://www.w3.org/2000/svg" d="M20.9512 26.7803L40.691 60.3675L60.4309 26.7803L52.535 26.7803L40.691 46.9326L28.7484 26.7803L20.9512 26.7803Z" fill="#3DD491"></path>
+              <path xmlns="http://www.w3.org/2000/svg" d="M28.8452 26.7803L40.7383 47.196L52.5331 26.7803L45.2596 26.7803L40.7383 34.6325L36.1187 26.7803L28.8452 26.7803Z" fill="#2C3D4F"></path>
+            </svg>
+          </a>
+          <div class="header-navigation-wrapper d-flex align-items-center w-100">
+            <nav class="header-navigation">
+              <ul class="header-list d-flex flex-column flex-md-row align-items-center p-0 m-0">
+                <li class="header-list-item d-flex">
+                  <a href="#steps-to-certification" class="d-flex align-items-center justify-content-center text-decoration-none">Steps to Certification</a>
+                </li>
+                <li class="header-list-item d-flex">
+                  <a href="#certificates" class="d-flex align-items-center justify-content-center text-decoration-none">Certificates</a>
+                </li>
+                <li class="header-list-item d-flex">
+                  <a href="#switch-for-levels" class="d-flex align-items-center justify-content-center text-decoration-none">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-burger flex-column align-items-end">
+            <i class="w-100"></i>
+            <i class="w-100"></i>
+            <i class="w-100"></i>
+          </div>
         </div>
-        <input type="checkbox" role="switch" id="menu-toggle" aria-label="menu toggle button"/>
-        <label class='menu-button-container d-flex flex-column justify-content-center align-items-center' for="menu-toggle">
-          <div class='menu-button'></div>
-        </label>
-        <ul class="menu d-md-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center w-100" inert>
-          <li class="d-flex justify-content-center"><a class="nav-link" href="#steps-to-certification">Steps to Certification</a></li>
-          <li class="d-flex justify-content-center"><a class="nav-link" href="#certificates">Certificates</a></li>
-          <li class="d-flex justify-content-center"><a class="nav-link" href="#switch-for-levels">Pricing</a></li>
-        </ul>    
       </header>
       <div id="hero" class="d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-break"><span class="gradient-text primary-text mb-2">Vue.js</span> Certification</h1>
@@ -209,8 +218,7 @@
           </div>
         </div>
         <div class="video position-relative">
-          <iframe id="video" class="d-block w-100 h-100 position-absolute levels-border-radius" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;height:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><img srcset='img/sddefault-small.webp 300w, img/sddefault-large.webp 991w' sizes='(width <= 991px) 300px, 991px'
-          src='img/sddefault-large.webp' alt='Certified Vue.js Developer: Chapter 1 Overview' loading='lazy'><span>▶</span></a>" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
+          <iframe id="video" class="d-block w-100 h-100 position-absolute levels-border-radius" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;height:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><picture><source srcset='img/sddefault-large.webp' media='(width >= 991px)'/><source src='img/sddefault-small.webp'/><img src='img/sddefault-small.webp' height='640' width='360' alt='Certified Vue.js Developer: Chapter 1 Overview' loading='lazy'/></picture><span>▶</span></a>" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
         </div>
       </section>
       <section id="switch-for-levels" class="d-flex flex-column align-items-center justify-content-center">
@@ -528,6 +536,7 @@
       </p>
     </footer>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/menu-script.js"></script>
+    <script defer src="js/switch-script.js"></script>
   </body>
 </html>
