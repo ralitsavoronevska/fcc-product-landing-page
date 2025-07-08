@@ -26,14 +26,10 @@
 *, *::before, *::after {
   box-sizing: border-box; }
 
-/* css formula: responsive fonts using rems */
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth; }
 
 body {
-  font-size: 16px;
-  font-size: 1.6rem;
   font-weight: 400 !important;
   font-style: normal;
   background-color: var(--bg-primary) !important;
