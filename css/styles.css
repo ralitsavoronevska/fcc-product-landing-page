@@ -189,7 +189,7 @@ svg.bi {
       fill: var(--logo-fill); }
   #header .header-list-item > a {
     height: 50px;
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
     transition: var(--transition); }
     #header .header-list-item > a:hover {
       color: var(--primary); }
