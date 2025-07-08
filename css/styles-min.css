@@ -246,7 +246,7 @@ body:has(.header-navigation-wrapper.open) {
     .header-navigation-wrapper .header-list {
       gap: 70px; } }
 
-#hero h1 {
+#hero :where(h1) {
   font-size: clamp(2rem, calc(3vw + 1rem), 2.5rem);
   margin-top: 10rem; }
 
