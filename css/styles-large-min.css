@@ -17,14 +17,6 @@
     font-size: 2.5rem; }
   #page-wrapper #hero #form {
     width: calc(100%/ 1.5) !important; }
-    #page-wrapper #hero #form input[type='email'] {
-      border-top-right-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-      border: 3px solid var(--primary); }
-    #page-wrapper #hero #form #submit {
-      height: 3.125rem;
-      border-top-left-radius: 0 !important;
-      border-bottom-left-radius: 0 !important; }
   #page-wrapper #switch-for-levels .levels-container {
     width: 15rem;
     padding: 2rem;
@@ -41,18 +33,12 @@
     font-size: 2.5rem; } }
 
 @media (min-width: 991px) {
-  #page-wrapper #steps-to-certification .certification-container, #page-wrapper #steps-to-certification .products-container, #page-wrapper #pricing .certification-container, #page-wrapper #pricing .products-container {
-    grid-template-columns: repeat(3, minmax(275px, calc(100% /3.325)));
-    align-items: flex-start;
-    height: auto; }
-    #page-wrapper #steps-to-certification .certification-container .product-coverage, #page-wrapper #steps-to-certification .products-container .product-coverage, #page-wrapper #pricing .certification-container .product-coverage, #page-wrapper #pricing .products-container .product-coverage {
-      font-size: 1.25rem; } }
+  #page-wrapper #steps-to-certification .products-container .product-coverage, #page-wrapper #pricing .products-container .product-coverage {
+    font-size: 1.25rem; } }
 
 @media (min-width: 1280px) {
-  #page-wrapper #steps-to-certification .certification-container, #page-wrapper #steps-to-certification .products-container, #page-wrapper #pricing .certification-container, #page-wrapper #pricing .products-container {
-    gap: 4rem; }
-    #page-wrapper #steps-to-certification .certification-container .benefits-list .benefits, #page-wrapper #steps-to-certification .products-container .benefits-list .benefits, #page-wrapper #pricing .certification-container .benefits-list .benefits, #page-wrapper #pricing .products-container .benefits-list .benefits {
-      font-size: 1rem; } }
+  #page-wrapper #steps-to-certification .benefits-list .benefits, #page-wrapper #pricing .benefits-list .benefits {
+    font-size: 1rem; } }
 
 @media (min-width: 768px) and (max-width: 990px) {
   #page-wrapper #certificates .details {

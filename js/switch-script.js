@@ -24,10 +24,10 @@ function switchUnchecked() {
     seniorLevelHeading.classList.add("grayed-out-text");
     midLevelHeading.classList.remove("grayed-out-text");
     midLevelHeading.classList.add(...text);
-    productsSeniorLevel.classList.remove("d-grid");
+    productsSeniorLevel.classList.remove("d-flex");
     productsSeniorLevel.classList.add("d-none");
     productsMidLevel.classList.remove("d-none");
-    productsMidLevel.classList.add("d-grid");
+    productsMidLevel.classList.add("d-flex");
 }
 
 function switchChecked() {
@@ -39,10 +39,10 @@ function switchChecked() {
     seniorLevel.classList.add(...outline);
     midLevelHeading.classList.remove(...text);
     midLevelHeading.classList.add("grayed-out-text");
-    productsMidLevel.classList.remove("d-grid");
+    productsMidLevel.classList.remove("d-flex");
     productsMidLevel.classList.add("d-none");
     productsSeniorLevel.classList.remove("d-none");
-    productsSeniorLevel.classList.add("d-grid");
+    productsSeniorLevel.classList.add("d-flex");
     seniorLevelHeading.classList.remove("grayed-out-text");
     seniorLevelHeading.classList.add(...text);
 }
