@@ -14,8 +14,10 @@
   --primary:var(--green);
   --secondary:var(--blue);
   --logo-fill:var(--white);
-  --header-menu-transition:0.4s;
-  --levels-transition:all .3s ease-in; }
+  --header-menu-transition:.3s;
+  --levels-transition:all .3s ease-in;
+  --border-radius:1.5rem;
+  --size:3.125rem; }
 
 * {
   margin: 0;
@@ -27,8 +29,9 @@
 body {
   font-weight: 400 !important;
   font-style: normal;
-  background-color: var(--bg-primary) !important;
+  font-size: 1rem;
   color: var(--text-primary) !important;
+  background-color: var(--bg-primary) !important;
   font-family: "Varela Round", sans-serif !important; }
 
 ul {
@@ -46,7 +49,6 @@ h2.text-center {
   cursor: pointer; }
   .btn.btn-primary-effect {
     background-color: var(--primary);
-    gap: .5rem;
     border: 1px solid var(--primary);
     color: var(--text-inverted) !important;
     transition-duration: .2s;
@@ -62,7 +64,7 @@ h2.text-center {
   color: transparent;
   font-style: normal; }
 
-.primary-text, .primary-bg {
+.primary-text, .primary-bg, body:has(.header-navigation-wrapper.open) #page-wrapper #header {
   background-image: linear-gradient(to right, var(--primary), var(--secondary)); }
 
 .green-text {
@@ -71,11 +73,10 @@ h2.text-center {
 .pink-text {
   background-image: linear-gradient(to right, var(--pink), var(--purple)); }
 
-.btn-outline, #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-  position: relative;
+.btn-outline, #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.mid-level:hover, #certificates .card.senior-level:hover {
   background-clip: padding-box;
   border: solid 2px transparent; }
-  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
+  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.mid-level:hover:before, #certificates .card.senior-level:hover:before {
     content: '';
     position: absolute;
     top: 0;
@@ -85,11 +86,11 @@ h2.text-center {
     z-index: -1;
     margin: -2px;
     border-radius: inherit; }
-  .btn-outline.primary-outline:before, #steps-to-certification .primary-outline.card.mid-level:hover:before, #certificates .primary-outline.card.mid-level:hover:before, #steps-to-certification .primary-outline.card.senior-level:hover:before, #certificates .primary-outline.card.senior-level:hover:before {
+  .btn-outline.primary-outline::before, #steps-to-certification .primary-outline.card.mid-level:hover::before, #steps-to-certification .primary-outline.card.senior-level:hover::before, #certificates .primary-outline.card.mid-level:hover::before, #certificates .primary-outline.card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--primary), var(--secondary)) border-box; }
-  .btn-outline.green-outline:before, #steps-to-certification .card.mid-level:hover:before, #certificates .card.mid-level:hover:before, #steps-to-certification .green-outline.card.senior-level:hover:before, #certificates .green-outline.card.senior-level:hover:before {
+  .btn-outline.green-outline::before, #steps-to-certification .card.mid-level:hover::before, #steps-to-certification .green-outline.card.senior-level:hover::before, #certificates .card.mid-level:hover::before, #certificates .green-outline.card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--green), var(--blue)) border-box; }
-  .btn-outline.pink-outline:before, #steps-to-certification .pink-outline.card.mid-level:hover:before, #certificates .pink-outline.card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.senior-level:hover:before {
+  .btn-outline.pink-outline::before, #steps-to-certification .pink-outline.card.mid-level:hover::before, #steps-to-certification .card.senior-level:hover::before, #certificates .pink-outline.card.mid-level:hover::before, #certificates .card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--pink), var(--purple)) border-box; }
 
 .grayed-out-text {
@@ -99,11 +100,7 @@ h2.text-center {
 .btn-gradient-container {
   background-color: var(--bg-gray); }
   .btn-gradient-container .btn-gradient {
-    padding: 15px 40px;
-    outline: none;
-    position: relative;
     z-index: 1;
-    cursor: pointer;
     color: var(--text-primary) !important; }
     .btn-gradient-container .btn-gradient:before {
       content: "";
@@ -118,7 +115,7 @@ h2.text-center {
       transition: 200ms; }
     .btn-gradient-container .btn-gradient:after {
       content: attr(data);
-      font-size: 1rem;
+      font-size: inherit;
       background-clip: text;
       color: transparent;
       transition: 200ms; }
@@ -132,18 +129,12 @@ h2.text-center {
         left: 0px; }
       .btn-gradient-container .btn-gradient:hover:after {
         color: var(--text-inverted); }
-    .btn-gradient-container .btn-gradient.green-gradient {
+    .btn-gradient-container .btn-gradient.green-gradient, .btn-gradient-container .btn-gradient.green-gradient::after {
       background: linear-gradient(to right, var(--green), var(--blue)); }
-      .btn-gradient-container .btn-gradient.green-gradient:after {
-        background: linear-gradient(to right, var(--green), var(--blue)); }
-    .btn-gradient-container .btn-gradient.pink-gradient {
+    .btn-gradient-container .btn-gradient.pink-gradient, .btn-gradient-container .btn-gradient.pink-gradient::after {
       background: linear-gradient(to right, var(--pink), var(--purple)); }
-      .btn-gradient-container .btn-gradient.pink-gradient:after {
-        background: linear-gradient(to right, var(--pink), var(--purple)); }
-    .btn-gradient-container .btn-gradient.primary-gradient {
+    .btn-gradient-container .btn-gradient.primary-gradient, .btn-gradient-container .btn-gradient.primary-gradient::after {
       background: linear-gradient(to right, var(--primary), var(--secondary)); }
-      .btn-gradient-container .btn-gradient.primary-gradient:after {
-        background: linear-gradient(to left, var(--primary), var(--secondary)); }
 
 svg.bi {
   width: 2rem;
@@ -162,6 +153,14 @@ svg.bi {
     width: 1rem;
     height: 1rem; }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.border-radius {
+  border-radius: var(--border-radius) !important; }
+
 #header {
   top: 0;
   left: 0;
@@ -171,15 +170,14 @@ svg.bi {
   background-color: rgba(26, 26, 26, 0.5);
   box-shadow: 3px 3px 12px rgba(66, 184, 131, 0.25);
   color: rgba(255, 255, 255, 0.7);
-  min-height: 50px;
-  padding: 0.5rem 1em; }
+  min-height: var(--size); }
   #header .header-logo {
-    max-width: 50px;
-    max-height: 50px; }
+    max-width: var(--size);
+    max-height: var(--size); }
     #header .header-logo #header-img {
       fill: var(--logo-fill); }
   #header .header-list-item > a {
-    height: 50px;
+    height: var(--size);
     color: var(--text-primary) !important;
     transition: var(--header-menu-transition); }
     #header .header-list-item > a:hover {
@@ -190,13 +188,11 @@ svg.bi {
   margin-top: 10rem; }
 
 #hero #form input[type='email'] {
-  max-width: 300px;
-  width: 100%;
+  min-width: 18.75rem;
   padding: .625rem; }
 
 #hero #form #submit {
-  max-width: 150px;
-  width: 100%;
+  max-width: 9.375rem;
   height: 3rem;
   margin: 15px 0;
   padding: 6px 12px !important;
@@ -216,20 +212,34 @@ svg.bi {
   color: var(--text-primary) !important; }
   .card .card-text {
     color: var(--text-gray); }
-  .card .card-body .benefits {
-    font-size: .875rem; }
+  .card .level-label {
+    color: var(--primary) !important; }
+  .card .product-coverage {
+    font-size: 1.5rem; }
+  .card .product-price {
+    font-size: 1.75rem; }
+  .card .btn-primary-effect {
+    border: 1px solid var(--primary); }
+  .card.best-value {
+    border: 2px solid var(--primary); }
+    .card.best-value .card-header {
+      background-color: var(--primary);
+      border-top-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem;
+      color: var(--text-inverted);
+      letter-spacing: .0875rem; }
 
 #steps-to-certification .card.mid-level, #steps-to-certification .card.senior-level, #certificates .card.mid-level, #certificates .card.senior-level {
   transition: var(--levels-transition); }
+  #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.mid-level:hover, #certificates .card.senior-level:hover {
+    background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125)); }
   #steps-to-certification .card.mid-level h3, #steps-to-certification .card.senior-level h3, #certificates .card.mid-level h3, #certificates .card.senior-level h3 {
     font-size: 1.45rem; }
 
 #steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover {
-  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125));
   transition: var(--levels-transition); }
 
 #steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
-  background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(127, 17, 224, 0.125));
   transition: var(--levels-transition); }
 
 #steps-to-certification .card .details, #certificates .card .details {
@@ -243,8 +253,6 @@ svg.bi {
 
 #switch-for-levels .levels-container {
   line-height: 2.25rem;
-  padding: .875rem;
-  margin: .875rem;
   background-color: var(--bg-gray); }
   #switch-for-levels .levels-container .levels-content {
     font-size: 1.25rem;
@@ -252,18 +260,11 @@ svg.bi {
 
 #switch-for-levels .form-switch.form-check {
   width: 2.5rem;
-  height: 1.5rem;
-  margin-bottom: 0;
-  padding-left: 0; }
+  height: 1.5rem; }
 
 #switch-for-levels .form-switch .form-check-input {
-  float: none;
-  margin-top: 0;
-  margin-left: 0;
   width: 2.5rem;
   height: 1.5rem;
-  padding-left: 0;
-  vertical-align: middle;
   background-color: var(--primary);
   border-color: var(--primary);
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important; }
@@ -278,28 +279,6 @@ svg.bi {
     box-shadow: 0.25rem rgba(53, 146, 104, 0.25);
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,.5)'/></svg>") !important; }
 
-#switch-for-levels .products-container .col .card .card-header {
-  background-color: var(--primary);
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-  color: var(--text-inverted);
-  letter-spacing: .0875rem; }
-
-#switch-for-levels .products-container .col .card .level-label {
-  color: var(--primary) !important; }
-
-#switch-for-levels .products-container .col .card .product-coverage {
-  font-size: 1rem; }
-
-#switch-for-levels .products-container .col .card .product-price {
-  font-size: 1.5rem; }
-
-#switch-for-levels .products-container .col .card .btn-primary-effect {
-  border: 1px solid var(--primary); }
-
-#switch-for-levels .products-container .col .card.best-value {
-  border: 2px solid var(--primary); }
-
 footer a {
   color: var(--text-inverted); }
   footer a:hover {
@@ -308,3 +287,48 @@ footer a {
 footer > p span {
   margin-left: 6px;
   color: var(--text-inverted); }
+
+@media screen and (max-width: 768px) {
+  .header-burger {
+    display: flex;
+    gap: 6px;
+    width: 30px;
+    margin-left: auto; }
+    .header-burger i {
+      height: 2px;
+      background-color: var(--logo-fill);
+      border-radius: 13px;
+      transition: var(--header-menu-transition); }
+    .header-burger.active i:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 4px); }
+    .header-burger.active i:nth-child(2) {
+      opacity: 0; }
+    .header-burger.active i:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -5px); }
+  .header-navigation-wrapper {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--header-menu-transition); }
+    .header-navigation-wrapper.open {
+      opacity: 1;
+      visibility: visible; }
+    .header-navigation-wrapper .header-navigation, .header-navigation-wrapper .header-list {
+      width: 100%; }
+    .header-navigation-wrapper .header-list {
+      background-color: var(--bg-gray); }
+      .header-navigation-wrapper .header-list > li:not(:last-child) {
+        border-bottom: 1px solid var(--bg-primary); }
+      .header-navigation-wrapper .header-list .header-list-item {
+        flex-direction: column;
+        width: 100%; }
+        .header-navigation-wrapper .header-list .header-list-item.active a {
+          color: var(--text-primary); } }
+
+body:has(.header-navigation-wrapper.open) {
+  --logo-fill:var(--black); }
