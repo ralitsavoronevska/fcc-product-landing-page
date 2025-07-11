@@ -321,9 +321,9 @@ footer > p span {
     .header-navigation-wrapper .header-navigation, .header-navigation-wrapper .header-list {
       width: 100%; }
     .header-navigation-wrapper .header-list {
-      background-color: var(--bg-gray); }
+      background-color: var(--bg-primary); }
       .header-navigation-wrapper .header-list > li:not(:last-child) {
-        border-bottom: 1px solid var(--bg-primary); }
+        border-bottom: 1px solid var(--bg-gray); }
       .header-navigation-wrapper .header-list .header-list-item {
         flex-direction: column;
         width: 100%; }

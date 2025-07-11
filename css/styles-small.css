@@ -74,14 +74,10 @@ h2.text-center {
 .pink-text {
   background-image: linear-gradient(to right, var(--pink), var(--purple)); }
 
-.btn-outline, #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover,
-#certificates .card.mid-level:hover,
-#certificates .card.senior-level:hover {
+.btn-outline, #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.mid-level:hover, #certificates .card.senior-level:hover {
   background-clip: padding-box;
   border: solid 2px transparent; }
-  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before,
-  #certificates .card.mid-level:hover:before,
-  #certificates .card.senior-level:hover:before {
+  .btn-outline:before, #steps-to-certification .card.mid-level:hover:before, #steps-to-certification .card.senior-level:hover:before, #certificates .card.mid-level:hover:before, #certificates .card.senior-level:hover:before {
     content: '';
     position: absolute;
     top: 0;
@@ -91,17 +87,11 @@ h2.text-center {
     z-index: -1;
     margin: -2px;
     border-radius: inherit; }
-  .btn-outline.primary-outline::before, #steps-to-certification .primary-outline.card.mid-level:hover::before, #steps-to-certification .primary-outline.card.senior-level:hover::before,
-  #certificates .primary-outline.card.mid-level:hover::before,
-  #certificates .primary-outline.card.senior-level:hover::before {
+  .btn-outline.primary-outline::before, #steps-to-certification .primary-outline.card.mid-level:hover::before, #steps-to-certification .primary-outline.card.senior-level:hover::before, #certificates .primary-outline.card.mid-level:hover::before, #certificates .primary-outline.card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--primary), var(--secondary)) border-box; }
-  .btn-outline.green-outline::before, #steps-to-certification .card.mid-level:hover::before, #steps-to-certification .green-outline.card.senior-level:hover::before,
-  #certificates .card.mid-level:hover::before,
-  #certificates .green-outline.card.senior-level:hover::before {
+  .btn-outline.green-outline::before, #steps-to-certification .card.mid-level:hover::before, #steps-to-certification .green-outline.card.senior-level:hover::before, #certificates .card.mid-level:hover::before, #certificates .green-outline.card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--green), var(--blue)) border-box; }
-  .btn-outline.pink-outline::before, #steps-to-certification .pink-outline.card.mid-level:hover::before, #steps-to-certification .card.senior-level:hover::before,
-  #certificates .pink-outline.card.mid-level:hover::before,
-  #certificates .card.senior-level:hover::before {
+  .btn-outline.pink-outline::before, #steps-to-certification .pink-outline.card.mid-level:hover::before, #steps-to-certification .card.senior-level:hover::before, #certificates .pink-outline.card.mid-level:hover::before, #certificates .card.senior-level:hover::before {
     background: linear-gradient(45deg, var(--pink), var(--purple)) border-box; }
 
 .grayed-out-text {
@@ -244,37 +234,26 @@ svg.bi {
       letter-spacing: .0875rem; }
 
 /** Steps to Certification Section & Certificates Section styling **/
-#steps-to-certification .card.mid-level, #steps-to-certification .card.senior-level,
-#certificates .card.mid-level,
-#certificates .card.senior-level {
+#steps-to-certification .card.mid-level, #steps-to-certification .card.senior-level, #certificates .card.mid-level, #certificates .card.senior-level {
   transition: var(--levels-transition); }
-  #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover,
-  #certificates .card.mid-level:hover,
-  #certificates .card.senior-level:hover {
+  #steps-to-certification .card.mid-level:hover, #steps-to-certification .card.senior-level:hover, #certificates .card.mid-level:hover, #certificates .card.senior-level:hover {
     background-image: linear-gradient(to bottom left, var(--bg-gray) 30%, rgba(66, 184, 131, 0.125)); }
-  #steps-to-certification .card.mid-level h3, #steps-to-certification .card.senior-level h3,
-  #certificates .card.mid-level h3,
-  #certificates .card.senior-level h3 {
+  #steps-to-certification .card.mid-level h3, #steps-to-certification .card.senior-level h3, #certificates .card.mid-level h3, #certificates .card.senior-level h3 {
     font-size: 1.45rem; }
 
-#steps-to-certification .card.mid-level:hover,
-#certificates .card.mid-level:hover {
+#steps-to-certification .card.mid-level:hover, #certificates .card.mid-level:hover {
   transition: var(--levels-transition); }
 
-#steps-to-certification .card.senior-level:hover,
-#certificates .card.senior-level:hover {
+#steps-to-certification .card.senior-level:hover, #certificates .card.senior-level:hover {
   transition: var(--levels-transition); }
 
-#steps-to-certification .card .details,
-#certificates .card .details {
+#steps-to-certification .card .details, #certificates .card .details {
   color: var(--text-primary); }
 
-#steps-to-certification .level-label,
-#certificates .level-label {
+#steps-to-certification .level-label, #certificates .level-label {
   color: var(--primary) !important; }
 
-#steps-to-certification .video,
-#certificates .video {
+#steps-to-certification .video, #certificates .video {
   padding-bottom: 56.25%; }
 
 /** Switch-For-Levels Section styling **/
@@ -346,13 +325,12 @@ footer > p span {
     .header-navigation-wrapper.open {
       opacity: 1;
       visibility: visible; }
-    .header-navigation-wrapper .header-navigation,
-    .header-navigation-wrapper .header-list {
+    .header-navigation-wrapper .header-navigation, .header-navigation-wrapper .header-list {
       width: 100%; }
     .header-navigation-wrapper .header-list {
-      background-color: var(--bg-gray); }
+      background-color: var(--bg-primary); }
       .header-navigation-wrapper .header-list > li:not(:last-child) {
-        border-bottom: 1px solid var(--bg-primary); }
+        border-bottom: 1px solid var(--bg-gray); }
       .header-navigation-wrapper .header-list .header-list-item {
         flex-direction: column;
         width: 100%; }
