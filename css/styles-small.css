@@ -324,7 +324,8 @@ footer > p span {
     transition: var(--header-menu-transition); }
     .header-navigation-wrapper.open {
       opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      box-shadow: 3px 3px 12px rgba(66, 184, 131, 0.25); }
     .header-navigation-wrapper .header-navigation, .header-navigation-wrapper .header-list {
       width: 100%; }
     .header-navigation-wrapper .header-list {
