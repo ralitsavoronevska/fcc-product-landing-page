@@ -16,12 +16,11 @@
     <!-- Preloading Google Font, General Styles and Bootstrap -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style" fetchpriority="high">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" as="style" fetchpriority="high">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="css/purged-bootstrap.min.css" as="style" fetchpriority="high">
 
-    <link rel="stylesheet" href="css/styles-small.css">
-    <link rel="stylesheet" href="css/styles-large.css" media="(min-width:768px)">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles-small-min.css">
+    <link rel="stylesheet" href="css/styles-large-min.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="css/purged-bootstrap.min.css">
 
     <!-- noscript fallbacks -->
     <noscript>
@@ -558,7 +557,7 @@
           target="_blank">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="mt-0">&copy; 2025</span>
       </p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       if(window.innerWidth <= 767) {
         window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".header-burger"),t=document.querySelector(".header-navigation-wrapper");e&&t&&e.addEventListener("click",(()=>{e.classList.toggle("active"),t.classList.toggle("open")})),document.querySelectorAll('a[href="#"]').forEach((e=>{e.addEventListener("click",(e=>{e.preventDefault()}))}))}));
