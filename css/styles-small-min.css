@@ -298,7 +298,8 @@ footer > p span {
       height: 2px;
       background-color: var(--logo-fill);
       border-radius: 13px;
-      transition: var(--header-menu-transition); }
+      transition: var(--header-menu-transition);
+      will-change: opacity,transform; }
     .header-burger.active i:nth-child(1) {
       transform: rotate(45deg) translate(7px, 4px); }
     .header-burger.active i:nth-child(2) {
@@ -314,7 +315,8 @@ footer > p span {
     padding: 0;
     opacity: 0;
     visibility: hidden;
-    transition: var(--header-menu-transition); }
+    transition: var(--header-menu-transition);
+    will-change: opacity; }
     .header-navigation-wrapper.open {
       opacity: 1;
       visibility: visible;
