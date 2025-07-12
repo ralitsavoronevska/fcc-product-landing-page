@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ralitsataylor.github.io/fcc-product-landing-page/sitemap.xml

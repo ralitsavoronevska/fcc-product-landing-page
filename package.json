@@ -1,0 +1,27 @@
+{
+  "name": "fcc-product-landing-page",
+  "version": "1.0.0",
+  "description": "FCC: Product Landing Page",
+  "homepage": "http://ralitsataylor.github.io/fcc-product-landing-page",
+  "scripts": {
+    "scss": "sass --watch --style=compressed --no-source-map scss/:dist/css/",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Responsiveness",
+    "Transitions",
+    "Flex Layout",
+    "Vanilla JavaScript"
+  ],
+  "author": "Ralitsa Taylor",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "hashmark": "^5.0.0",
+    "purgecss": "^7.0.2",
+    "sass": "^1.69.5"
+  }
+}
