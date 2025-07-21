@@ -14,49 +14,49 @@ const outline = ["btn-outline", "primary-outline"];
 const text = ["gradient-text", "primary-text"];
 
 function switchUnchecked() {
-    root.style.setProperty("--primary", "var(--green)");
-    root.style.setProperty("--secondary", "var(--blue)");
-    header.style.boxShadow = greenBoxShadow;
-    window.innerWidth < 768 ? (menu.style.boxShadow = greenBoxShadow) : "";
-    seniorLevel.classList.remove(...outline);
-    midLevel.classList.add(...outline);
-    seniorLevelHeading.classList.remove(...text);
-    seniorLevelHeading.classList.add("grayed-out-text");
-    midLevelHeading.classList.remove("grayed-out-text");
-    midLevelHeading.classList.add(...text);
-    productsSeniorLevel.classList.remove("d-flex");
-    productsSeniorLevel.classList.add("d-none");
-    productsMidLevel.classList.remove("d-none");
-    productsMidLevel.classList.add("d-flex");
+  root.style.setProperty("--primary", "var(--green)");
+  root.style.setProperty("--secondary", "var(--blue)");
+  header.style.boxShadow = greenBoxShadow;
+  window.innerWidth < 768 ? (menu.style.boxShadow = greenBoxShadow) : "";
+  seniorLevel.classList.remove(...outline);
+  midLevel.classList.add(...outline);
+  seniorLevelHeading.classList.remove(...text);
+  seniorLevelHeading.classList.add("grayed-out-text");
+  midLevelHeading.classList.remove("grayed-out-text");
+  midLevelHeading.classList.add(...text);
+  productsSeniorLevel.classList.remove("d-flex");
+  productsSeniorLevel.classList.add("d-none");
+  productsMidLevel.classList.remove("d-none");
+  productsMidLevel.classList.add("d-flex");
 }
 
 function switchChecked() {
-    root.style.setProperty("--primary", "var(--pink)");
-    root.style.setProperty("--secondary", "var(--purple)");
-    header.style.boxShadow = pinkBoxShadow;
-    window.innerWidth < 768 ? (menu.style.boxShadow = pinkBoxShadow) : "";
-    midLevel.classList.remove(...outline);
-    seniorLevel.classList.add(...outline);
-    midLevelHeading.classList.remove(...text);
-    midLevelHeading.classList.add("grayed-out-text");
-    productsMidLevel.classList.remove("d-flex");
-    productsMidLevel.classList.add("d-none");
-    productsSeniorLevel.classList.remove("d-none");
-    productsSeniorLevel.classList.add("d-flex");
-    seniorLevelHeading.classList.remove("grayed-out-text");
-    seniorLevelHeading.classList.add(...text);
+  root.style.setProperty("--primary", "var(--pink)");
+  root.style.setProperty("--secondary", "var(--purple)");
+  header.style.boxShadow = pinkBoxShadow;
+  window.innerWidth < 768 ? (menu.style.boxShadow = pinkBoxShadow) : "";
+  midLevel.classList.remove(...outline);
+  seniorLevel.classList.add(...outline);
+  midLevelHeading.classList.remove(...text);
+  midLevelHeading.classList.add("grayed-out-text");
+  productsMidLevel.classList.remove("d-flex");
+  productsMidLevel.classList.add("d-none");
+  productsSeniorLevel.classList.remove("d-none");
+  productsSeniorLevel.classList.add("d-flex");
+  seniorLevelHeading.classList.remove("grayed-out-text");
+  seniorLevelHeading.classList.add(...text);
 }
 
 seniorLevel.addEventListener("click", (e) => {
-    switchForLevels.checked = !0;
-    switchChecked();
+  switchForLevels.checked = !0;
+  switchChecked();
 });
 
 midLevel.addEventListener("click", (e) => {
-    switchForLevels.checked = !1;
-    switchUnchecked();
+  switchForLevels.checked = !1;
+  switchUnchecked();
 });
 
 switchForLevels.addEventListener("change", (e) => {
-    !switchForLevels.checked ? switchUnchecked() : switchChecked();
+  !switchForLevels.checked ? switchUnchecked() : switchChecked();
 });
