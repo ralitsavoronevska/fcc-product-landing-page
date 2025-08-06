@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -30,6 +31,7 @@
 
     <!-- Preload Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uPLdshZg.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Main stylesheets: Bootstrap and my own styles -->
@@ -48,9 +50,9 @@
     <div id="page-wrapper" class="position-relative">
       <header id="header" class="position-fixed d-flex flex-row align-items-center justify-content-between py-2 px-3">
         <div class="header-wrapper w-100 d-flex align-items-center">
-          <a href="https://ralitsataylor.github.io/fcc-product-landing-page/" target="_blank" class="header-logo">
-            <img src="img/svgs/logo.svg" id="header-img" class="center" alt="logo">
-            <img src="img/svgs/logo-dark.svg" id="header-img-dark" class="d-none center" alt="logo">
+          <a href="#" target="_blank" class="header-logo">
+            <img src="img/svgs/logo.svg" width="50" height="50" id="header-img" class="center" alt="Vue JS logo">
+            <img src="img/svgs/logo-dark.svg" width="50" height="50" id="header-img-dark" class="d-none center" alt="Vue JS dark logo">
           </a>
           <div class="header-navigation-wrapper d-flex align-items-center w-100">
             <nav class="header-navigation" id="nav-bar">
@@ -75,23 +77,23 @@
         </div>
       </header>
       <main>
-        <div id="hero" class="d-flex flex-column align-items-center justify-content-center container">
+        <div id="hero" class="center flex-column container">
           <h1 class="text-center text-break mb-4"><span class="gradient-text primary-text">Vue.js</span> Certification</h1>
           <p class="text-center">The official certification of competence for the Vue.js - The Progressive Front-end JavaScript Framework.</p>
-          <form id="form" name="email-form" class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-0 gap-md-2 w-100 my-3" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email address" required aria-label="email" autocomplete="off" class="rounded-3">
-            <input id="submit" type="submit" value="Get Started" class="btn btn-primary-effect gap-2 border border-0 rounded-3 fw-bold text-uppercase w-100 d-md-block">
+          <form name="email-form" id="form" class="center flex-column flex-md-row gap-0 gap-md-2 w-100 my-3" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" class="rounded-3" placeholder="Enter your email address" autocomplete="off" pattern="/^[a-zA-Z0-9.!#$%&’*+ /=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+            <input type="submit" id="submit" class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase w-100 d-md-block" value="Get Started">
           </form>
           <p class="hero-partners text-center mt-2">
-            Powered by <a href="https://vueschool.io" target="_blank" class="text-decoration-underline"> Vue School</a>&nbsp; <span>in partnership with <span>the </span></span><a href="https://vuejs.org/" target="_blank" class="text-decoration-underline">Vue.js</a><span> organisation</span>
+            Powered by <a href="https://vueschool.io" class="text-decoration-underline" target="_blank" rel="noopener"> Vue School</a>&nbsp; <span>in partnership with <span>the </span></span><a href="https://vuejs.org/" class="text-decoration-underline" target="_blank" rel="noopener">Vue.js</a><span> organisation</span>.
           </p>
         </div>
-        <section id="steps-to-certification" class="d-flex flex-column align-items-center justify-content-center container">
+        <section id="steps-to-certification" class="center flex-column container">
           <h2 class="text-center">Steps to <span class="gradient-text primary-text">Certification</span></h2>
           <div class="row row-cols-1 row-cols-lg-3 mt-5">
             <div class="col">
               <div class="card w-100 border-radius">
-                <div class="card-header border border-0 p-3 pb-0">
+                <div class="card-header border-0 p-3 pb-0">
                   <p class="level-label fw-bold mb-0 text-uppercase">Step 1</p>
                   <div class="icon center flex-column px-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/><path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208M6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5"/></svg>
@@ -105,7 +107,7 @@
             </div>
             <div class="col">
               <div class="card w-100 border-radius">
-                <div class="card-header border border-0 p-3 pb-0">
+                <div class="card-header border-0 p-3 pb-0">
                   <p class="level-label fw-bold mb-0 text-uppercase">Step 2</p>
                   <div class="icon center flex-column px-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/><path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/></svg>
@@ -119,7 +121,7 @@
             </div>
             <div class="col">
               <div class="card w-100 border-radius">
-                <div class="card-header border border-0 p-3 pb-0">
+                <div class="card-header border-0 p-3 pb-0">
                   <p class="level-label fw-bold mb-0 text-uppercase">Step 3</p>
                   <div class="icon center flex-column px-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/></svg>
@@ -138,9 +140,9 @@
           <div class="row row-cols-1 row-cols-lg-2 mt-5 mb-lg-4">
             <div class="col">
               <div class="card mid-level w-100 border-radius">
-                <div class="card-header border border-0 position-relative p-3">
+                <div class="card-header border-0 position-relative p-3">
                   <div class="icon center pt-0">
-                    <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15"><path xmlns="http://www.w3.org/2000/svg" d="M1.652 24.788a2 2 0 0 0-.408 2.83L2.34 29.05a2 2 0 0 1 0 2.433l-1.095 1.428a2 2 0 0 0 .408 2.832L3.099 36.8a2 2 0 0 1 .685 2.337l-.65 1.679a2 2 0 0 0 1.19 2.605l1.672.6a2 2 0 0 1 1.318 2.054l-.153 1.789a2 2 0 0 0 1.877 2.167l1.763.102a2 2 0 0 1 1.844 1.6L13 53.485a2 2 0 0 0 2.415 1.552l1.713-.4a2 2 0 0 1 2.226 1.018l.822 1.567a2 2 0 0 0 2.759.81l1.525-.866a2 2 0 0 1 2.425.349l1.224 1.265a2 2 0 0 0 2.875 0l1.224-1.265a2 2 0 0 1 2.425-.349l1.525.866a2 2 0 0 0 2.759-.81l.823-1.567a2 2 0 0 1 2.225-1.018l1.712.4a2 2 0 0 0 2.416-1.552l.354-1.75a2 2 0 0 1 1.844-1.6l1.763-.103a2 2 0 0 0 1.877-2.167l-.153-1.79a2 2 0 0 1 1.317-2.053l1.674-.6a2 2 0 0 0 1.19-2.605l-.651-1.679a2 2 0 0 1 .685-2.337l1.446-1.057a2 2 0 0 0 .408-2.832l-1.095-1.428a2 2 0 0 1 0-2.433l1.096-1.431a2 2 0 0 0-.408-2.831l-1.447-1.057a2 2 0 0 1-.685-2.338l.65-1.679a2 2 0 0 0-1.19-2.605l-1.673-.6a2 2 0 0 1-1.317-2.053l.153-1.788a2 2 0 0 0-1.878-2.167l-1.76-.101a2 2 0 0 1-1.847-1.6l-.353-1.752a2 2 0 0 0-2.414-1.552l-1.715.4a2 2 0 0 1-2.224-1.018l-.823-1.567a2 2 0 0 0-2.758-.81l-1.526.866a2 2 0 0 1-2.424-.35l-1.225-1.266a2 2 0 0 0-2.875 0l-1.225 1.266a2 2 0 0 1-2.424.35L22.933 2.5a2 2 0 0 0-2.758.81l-.823 1.567a2 2 0 0 1-2.224 1.018l-1.715-.4A2 2 0 0 0 13 7.048L12.646 8.8a2 2 0 0 1-1.846 1.6l-1.761.102a2 2 0 0 0-1.878 2.167l.153 1.788a2 2 0 0 1-1.318 2.053l-1.673.6a2 2 0 0 0-1.19 2.605l.651 1.679A2 2 0 0 1 3.1 23.73z" fill="url(#a)" fill-opacity=".3"/><path xmlns="http://www.w3.org/2000/svg" d="M15.098 19.136 29.323 43.34l14.225-24.204h-5.69l-8.535 14.522-8.606-14.522z" fill="#3DD491"/><path xmlns="http://www.w3.org/2000/svg" d="m20.786 19.136 8.57 14.712 8.5-14.712h-5.241l-3.258 5.659-3.33-5.659z" fill="#2C3D4F"/><defs xmlns="http://www.w3.org/2000/svg"><linearGradient id="a" x1="59.091" y1=".265" x2="-11.724" y2="21.914" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#42B883"/><stop offset="0" stop-color="#42B883"/><stop offset="1" stop-color="#0EBBD2"/></linearGradient></defs></svg>
+                    <img src="img/svgs/logo-green.svg" width="60" height="61" alt="Vue JS dark purple logo">
                   </div>
                   <h3 class="text-center gradient-text green-text my-2">Mid-Level Vue.js Developer</h3>
                 </div>
@@ -159,16 +161,16 @@
                 <div class="card-body d-flex flex-column align-items-center justify-content-start pt-0">
                   <p class="card-text">Review the exam preparation guide to ensure that you are familiar with the requirements of the exam and what is expected. Don't hasitate to ask us questions.</p>
                   <div class="btn-gradient-container rounded-3 center">
-                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative green-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
+                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative green-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card senior-level w-100 border-radius">
-                <div class="card-header border border-0 position-relative p-3">
+                <div class="card-header border-0 position-relative p-3">
                   <div class="icon center pt-0">
-                    <svg fill="none" viewBox="0 0 60 61" height="61" width="60" xmlns="http://www.w3.org/2000/svg" class="h-auto w-15"><path xmlns="http://www.w3.org/2000/svg" d="M1.652 24.788a2 2 0 0 0-.408 2.83L2.34 29.05a2 2 0 0 1 0 2.433l-1.095 1.428a2 2 0 0 0 .408 2.832L3.099 36.8a2 2 0 0 1 .685 2.337l-.65 1.679a2 2 0 0 0 1.19 2.605l1.672.6a2 2 0 0 1 1.318 2.054l-.153 1.789a2 2 0 0 0 1.877 2.167l1.763.102a2 2 0 0 1 1.844 1.6L13 53.485a2 2 0 0 0 2.415 1.552l1.713-.4a2 2 0 0 1 2.226 1.018l.822 1.567a2 2 0 0 0 2.759.81l1.525-.866a2 2 0 0 1 2.425.349l1.224 1.265a2 2 0 0 0 2.875 0l1.224-1.265a2 2 0 0 1 2.425-.349l1.525.866a2 2 0 0 0 2.759-.81l.823-1.567a2 2 0 0 1 2.225-1.018l1.712.4a2 2 0 0 0 2.416-1.552l.354-1.75a2 2 0 0 1 1.844-1.6l1.763-.103a2 2 0 0 0 1.877-2.167l-.153-1.79a2 2 0 0 1 1.317-2.053l1.674-.6a2 2 0 0 0 1.19-2.605l-.651-1.679a2 2 0 0 1 .685-2.337l1.446-1.057a2 2 0 0 0 .408-2.832l-1.095-1.428a2 2 0 0 1 0-2.433l1.096-1.431a2 2 0 0 0-.408-2.831l-1.447-1.057a2 2 0 0 1-.685-2.338l.65-1.679a2 2 0 0 0-1.19-2.605l-1.673-.6a2 2 0 0 1-1.317-2.053l.153-1.788a2 2 0 0 0-1.878-2.167l-1.76-.101a2 2 0 0 1-1.847-1.6l-.353-1.752a2 2 0 0 0-2.414-1.552l-1.715.4a2 2 0 0 1-2.224-1.018l-.823-1.567a2 2 0 0 0-2.758-.81l-1.526.866a2 2 0 0 1-2.424-.35l-1.225-1.266a2 2 0 0 0-2.875 0l-1.225 1.266a2 2 0 0 1-2.424.35L22.933 2.5a2 2 0 0 0-2.758.81l-.823 1.567a2 2 0 0 1-2.224 1.018l-1.715-.4A2 2 0 0 0 13 7.048L12.646 8.8a2 2 0 0 1-1.846 1.6l-1.761.102a2 2 0 0 0-1.878 2.167l.153 1.788a2 2 0 0 1-1.318 2.053l-1.673.6a2 2 0 0 0-1.19 2.605l.651 1.679A2 2 0 0 1 3.1 23.73z" fill="url(#a)" fill-opacity=".3"/><path xmlns="http://www.w3.org/2000/svg" d="M15.098 19.136 29.323 43.34l14.225-24.204h-5.69l-8.535 14.522-8.606-14.522z" fill="#3DD491"/><path xmlns="http://www.w3.org/2000/svg" d="m20.786 19.136 8.57 14.712 8.5-14.712h-5.241l-3.258 5.659-3.33-5.659z" fill="#2C3D4F"/><defs xmlns="http://www.w3.org/2000/svg"><linearGradient id="a" x1="59.091" y1=".265" x2="-11.724" y2="21.914" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F864BD"/><stop offset="1" stop-color="#4785FE"/></linearGradient></defs></svg>
+                    <img src="img/svgs/logo-purple.svg" width="60" height="61" alt="Vue JS dark purple logo">
                   </div>
                   <h3 class="text-center mt-2 mb-2 gradient-text pink-text">Senior Vue.js Developer</h3>
                 </div>
@@ -186,22 +188,22 @@
                     30 Questions and 105 minutes of Coding Challenges
                   </p>
                 </div>
-                <div class="card-body d-flex flex-column align-items-center justify-content-center pt-0">
+                <div class="card-body center flex-column pt-0">
                   <p class="card-text">If you need additional training, there is additional self-study training available or alternatively you can elect to attend the live intensive bootcamp training sessions.</p>
                   <div class="btn-gradient-container rounded-3 center">
-                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative pink-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
+                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative pink-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="video position-relative mt-3">
-            <iframe id="video" class="d-block w-100 h-100 position-absolute border-radius" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;height:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><img srcset='img/sddefault-small.webp, img/sddefault-large.webp 2x' src='img/sddefault-large.webp' alt='Certified Vue.js Developer: Chapter 1 Overview' class='img-fluid' loading='lazy'/><span>▶</span></a>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
+            <iframe id="video" class="d-block w-100 h-100 position-absolute border-radius" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;height:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><picture><source srcset='img/sddefault-small.webp' media='(orientation: portrait)'><img src='img/sddefault-large.webp' alt='Certified Vue.js Developer: Chapter 1 Overview' class='img-fluid' loading='lazy'></picture><span>▶</span></a>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
           </div>
         </section>
-        <section id="switch-for-levels" class="d-flex flex-column align-items-center justify-content-center container">
+        <section id="switch-for-levels" class="center flex-column container">
           <h2 class="text-center">Choose Your <span class="gradient-text primary-text">Level</span></h2>
-          <div class="switch-for-levels-container d-flex flex-row align-items-center justify-content-center p-3">
+          <div class="switch-for-levels-container center flex-row p-3">
             <div id="mid-level" class="levels-container position-relative border-radius btn-outline primary-outline p-3 m-3">
               <div class="levels-content center">
                 <span class="heading-primary">
@@ -239,8 +241,8 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
                         </ul>
                       </div>
-                      <div class="btn-gradient-container border border-0 rounded-3 center">  
-                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
                       </div>
                     </div>  
                   </div>
@@ -248,7 +250,7 @@
               </div>
               <div class="col">
                 <div class="card best-value d-flex justify-content-center w-100 border-radius">
-                  <div class="card-header border border-0 fw-bold text-uppercase text-center">Best Value</div>
+                  <div class="card-header border-0 fw-bold text-uppercase text-center">Best Value</div>
                   <div class="card-body">
                     <p class="level-label mb-0 text-capitalize text-left fw-bold">Mid-Level</p>
                     <div class="level-container center flex-column text-center w-100">
@@ -268,7 +270,7 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
                         </ul>
                       </div>
-                      <button class="btn btn-primary-effect gap-2 border border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
+                      <button class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
                     </div>
                   </div>
                 </div>
@@ -294,8 +296,8 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
                         </ul>
                       </div>
-                      <div class="btn-gradient-container border border-0 rounded-3 center">  
-                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
                       </div>
                     </div>
                   </div>
@@ -320,8 +322,8 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
                         </ul>
                       </div>
-                      <div class="btn-gradient-container border border-0 rounded-3 center">  
-                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
                       </div>
                     </div>  
                   </div>
@@ -329,7 +331,7 @@
               </div>
               <div class="col">
                 <div class="card best-value d-flex justify-content-center w-100 border-radius">
-                  <div class="card-header border border-0 fw-bold text-uppercase text-center">Best Value</div>
+                  <div class="card-header border-0 fw-bold text-uppercase text-center">Best Value</div>
                   <div class="card-body">
                     <p class="level-label mb-0 text-capitalize text-left fw-bold">Mid + Senior</p>
                     <div class="level-container center flex-column text-center w-100">
@@ -349,7 +351,7 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
                         </ul>
                       </div>
-                      <button class="btn btn-primary-effect gap-2 border border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
+                      <button class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
                     </div>
                   </div>
                 </div>
@@ -375,8 +377,8 @@
                           <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
                         </ul>
                       </div>
-                      <div class="btn-gradient-container border border-0 rounded-3 center">  
-                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
                       </div>
                     </div>
                   </div>
@@ -387,19 +389,29 @@
         </section>
       </main>
     </div>
-    <footer class="primary-bg d-flex flex-column align-items-center justify-content-center p-3 mt-5">
+    <footer class="primary-bg center flex-column p-3 mt-5">
       <ul class="d-flex">
-        <li class="px-3"><a href="https://certificates.dev/vuejs/legal/privacy-policy" rel="noopener noreferrer" target="_blank" class="text-decoration-none"><span>Privacy</span></a></li>
-        <li class="px-3"><a href="https://certificates.dev/vuejs/legal/terms-conditions" target="_blank" class="text-decoration-none"><span>Terms</span></a></li>
-        <li class="px-3"><a href="mailto:team@certificates.dev" class="text-decoration-none">Contact</a></li>
+        <li class="px-3">
+          <a href="https://certificates.dev/vuejs/legal/privacy-policy" class="text-decoration-none" target="_blank" rel="noopener">
+            <span>Privacy</span>
+          </a>
+        </li>
+        <li class="px-3">
+          <a href="https://certificates.dev/vuejs/legal/terms-conditions" class="text-decoration-none" target="_blank" rel="noopener">
+            <span>Terms</span>
+          </a>
+          </li>
+        <li class="px-3">
+          <a href="mailto:team@certificates.dev" class="text-decoration-none">Contact</a>
+        </li>
       </ul>
       <p class="mb-0">
         <a href="http://ralitsataylor.github.io/modern-portfolio/" class="text-decoration-underline"
           target="_blank">&#60;Ralitsa Taylor&#47;&#62;</a> <span class="mt-0">&copy; 2025</span>
       </p>
     </footer>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/menu-script-min.js"></script>
-    <script defer src="js/switch-script-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/menu-script-min.js" defer></script>
+    <script src="js/switch-script-min.js" defer></script>
   </body>
 </html>
