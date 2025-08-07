@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-	const burger = document.querySelector(".header-burger");
+	const burger = document.querySelector(".mobile-menu-icon");
 	const navWrapper = document.querySelector(".header-navigation-wrapper");
 	const logo = document.querySelector("#header-img");
 	const darkLogo = document.querySelector("#header-img-dark");
