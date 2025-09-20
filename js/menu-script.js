@@ -1,9 +1,9 @@
 const burger = document.querySelector(".mobile-menu-icon");
 const navWrapper = document.querySelector(".header-navigation-wrapper");
 const navLinks = document.querySelectorAll(".header-navigation-wrapper a");
-const header = document.querySelector("#header");
+let header = document.querySelector("#header");
 
-burger?.addEventListener("click", () => {
+burger.addEventListener("click", () => {
   const isOpen = navWrapper.classList.toggle("open");
   burger.classList.toggle("active", isOpen);
   burger.setAttribute("aria-expanded", isOpen);

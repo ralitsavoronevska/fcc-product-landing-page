@@ -1,4 +1,4 @@
-let switchForLevels = document.querySelector("#levels-toggle");
+const switchForLevels = document.querySelector("#levels-toggle");
 const midLevel = document.querySelector("#mid-level");
 const midLevelHeading = document.querySelector(".heading-primary .fst-normal");
 const seniorLevel = document.querySelector("#senior-level");
@@ -6,7 +6,7 @@ const seniorLevelHeading = document.querySelector(".heading-secondary .fst-norma
 const productsMidLevel = document.querySelector("#pricing .mid-level");
 const productsSeniorLevel = document.querySelector("#pricing .senior-level");
 const root = document.querySelector(":root");
-const header = document.querySelector("#header");
+let header = document.querySelector("#header");
 const menu = document.querySelector(".header-navigation-wrapper");
 const greenBoxShadow = "3px 3px 12px rgba(66, 184, 131, .25)";
 const pinkBoxShadow = "3px 3px 12px rgba(248, 100, 189, .25)";
