@@ -1,4 +1,4 @@
-const switchForLevels = document.querySelector("#levels-toggle");
+let switchForLevels = document.querySelector("#levels-toggle");
 const midLevel = document.querySelector("#mid-level");
 const midLevelHeading = document.querySelector(".heading-primary .fst-normal");
 const seniorLevel = document.querySelector("#senior-level");
