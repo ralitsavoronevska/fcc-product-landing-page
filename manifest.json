@@ -1,0 +1,25 @@
+{
+  "name": "FCC: Build A Product Landing Page",
+  "short_name": "ProductLandingPage",
+  "description": "FCC: Build A Product Landing Page",
+  "author": "Ralitsa Voronevska",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#42b883",
+  "icons": [
+    {
+      "src": "img/svgs/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "img/svgs/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "apple touch icon"
+    }
+  ],
+  "canonical_url": "https://ralitsavoronevska.github.io/fcc-product-landing-page/",
+  "screenshot": "https://ralitsavoronevska.github.io/fcc-product-landing-page/dist/img/fcc-product-landing-page-desktop-preview.png"
+}
