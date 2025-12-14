@@ -1,0 +1,102 @@
+/** media queries for responsive design **/
+@media (min-width: 768px) {
+  #page-wrapper {
+    .mobile-menu-icon {
+      display: none;
+    }
+    .header-navigation-wrapper {
+      justify-content: flex-end;
+      .header-list {
+        gap: 4.375rem; /* 70px */
+      }
+    }
+    h2 {
+      &.text-center {
+        font-size: 2.5rem !important; /* 40px */
+      }
+    }
+    .btn-primary-effect {
+      width: 100%;
+    }
+    svg {
+      &.bi {
+        &.bi-circle-check {
+          width: 1.25rem; /* 20px */
+          height: 1.25rem; /* 20px */
+        }
+      }
+    }
+    #hero {
+      h1 {
+        font-size: 2.5rem; /* 40px */
+      }
+      #form {
+        width: calc(100% / 1.5) !important;
+      }
+    }
+    #switch-for-levels {
+      .levels-container {
+        width: 15rem; /* 240px */
+        padding: 2rem !important; /* 32px */
+        margin: 1rem 2rem !important; /* 16px 32px */
+        .levels-content {
+          font-size: 1.875rem; /* 30px */
+        }
+      }
+      .form-switch {
+        &.form-check,
+        .form-check-input {
+          width: 3.5rem; /* 56px */
+        }
+      }
+    }
+  }
+}
+
+#page-wrapper {
+  #switch-for-levels {
+    .switch-for-levels-container {
+      @media (min-width: 768px) {
+        padding: 2rem !important; /* 32px */
+      }
+      @media (min-width: 991px) {
+        padding: 3rem !important; /* 48px */
+      }
+    }
+    .products-container {
+      .card {
+        .product-coverage {
+          @media (min-width: 768px) {
+            font-size: 2rem; /* 32px */
+          }
+          @media (min-width: 991px) {
+            font-size: 1.25rem; /* 20px */
+          }
+          @media (min-width: 1280px) {
+            font-size: 1.5rem; /* 24px */
+          }
+        }
+        .product-price {
+          @media (min-width: 768px) {
+            font-size: 2.5rem; /* 40px */
+          }
+        }
+      }
+    }
+  }
+  #certificates {
+    .details {
+      @media (min-width: 768px) and (max-width: 990px) {
+        gap: 1.5rem; /* 24px */
+      }
+      @media (min-width: 1400px) {
+        gap: 1.5rem; /* 24px */
+      }
+    }
+    .video {
+      @media (min-width: 991px) {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

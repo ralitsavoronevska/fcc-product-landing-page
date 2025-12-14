@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Build A Product Landing Page</title>
+    <meta name="theme-color" content="#42b883">
+    <meta name="description" content="FCC: Build A Product Landing Page">
+    <link rel="canonical" href="https://ralitsavoronevska.github.io/fcc-product-landing-page/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ralitsavoronevska.github.io/fcc-product-landing-page/">
+    <meta property="og:title" content="FCC: Build A Product Landing Page">
+    <meta property="og:description" content="FCC: Build A Product Landing Page">
+    <meta property="og:image" content="https://ralitsavoronevska.github.io/fcc-product-landing-page/dist/img/fcc-product-landing-page-desktop-preview.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ralitsavoronevska.github.io/fcc-product-landing-page/">
+    <meta name="twitter:title" content="FCC: Build A Product Landing Page">
+    <meta name="twitter:description" content="FCC: Build A Product Landing Page">
+    <meta name="twitter:image" content="https://ralitsavoronevska.github.io/fcc-product-landing-page/dist/img/fcc-product-landing-page-desktop-preview.png">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="img/svgs/favicon.svg">
+    <link rel="apple-touch-icon" href="img/svgs/favicon.svg">
+
+    <!-- Preload Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/varelaround/v21/w8gdH283Tvk__Lua32TysjIfp8uPLdshZg.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Main stylesheets: Bootstrap and my own styles -->
+    <link rel="stylesheet" href="purged-bootstrap.min.css" fetchpriority="high">
+    <link rel="stylesheet" href="css/styles-small.css">
+    <link rel="stylesheet" href="css/styles-large.css" media="(min-width:768px)">
+
+    <!-- noscript fallbacks -->
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
+    </noscript>
+  </head>
+
+  <body class="fst-normal fw-normal">
+    
+    <div id="page-wrapper" class="position-relative">
+
+      <!-- start of header -->
+      <header id="header" class="position-fixed d-flex flex-row align-items-center justify-content-between py-2 px-3">
+        <div class="header-wrapper w-100 d-flex align-items-center">
+          <a href="#" class="header-logo" aria-label="Vue JS logo">
+            <img src="img/svgs/logo.svg" width="50" height="50" id="header-img" class="center" alt="Vue JS logo">
+            <img src="img/svgs/logo-dark.svg" width="50" height="50" id="header-img-dark" class="d-none center" alt="Vue JS dark logo">
+          </a>
+          <div class="header-navigation-wrapper d-flex align-items-center w-100">
+            <nav class="header-navigation" id="nav-bar">
+              <ul class="header-list d-flex flex-column flex-md-row align-items-center p-0 m-0">
+                <li class="header-list-item d-flex">
+                  <a href="#steps-to-certification" class="nav-link center text-decoration-none">Steps to Certification</a>
+                </li>
+                <li class="header-list-item d-flex">
+                  <a href="#certificates" class="nav-link center text-decoration-none">Certificates</a>
+                </li>
+                <li class="header-list-item d-flex">
+                  <a href="#switch-for-levels" class="nav-link center text-decoration-none">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-menu-icon flex-column align-items-end">
+            <i class="w-100"></i>
+            <i class="w-100"></i>
+            <i class="w-100"></i>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <main>
+
+        <!-- start of hero section -->
+        <div id="hero" class="center flex-column container">
+          <h1 class="text-center text-break mb-4"><span class="gradient-text primary-text">Vue.js</span> Certification</h1>
+          <p class="text-center">The official certification of competence for the Vue.js - The Progressive Front-end JavaScript Framework.</p>
+          <form name="email-form" id="form" class="center flex-column flex-md-row gap-0 gap-md-2 w-100 my-3" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" class="rounded-3" placeholder="Enter your email address" autocomplete="off" pattern="/^[a-zA-Z0-9.!#$%&’*+ /=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+            <input type="submit" id="submit" class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase w-100 d-md-block" value="Get Started">
+          </form>
+          <p class="hero-partners text-center mt-2">
+            Powered by <a href="https://vueschool.io" class="text-decoration-underline" target="_blank" rel="noopener"> Vue School</a>&nbsp; <span>in partnership with <span>the </span></span><a href="https://vuejs.org/" class="text-decoration-underline" target="_blank" rel="noopener">Vue.js</a><span> organisation</span>.
+          </p>
+        </div>
+        <!-- end of hero section -->
+
+        <!-- start of steps-to-certification section -->
+        <section id="steps-to-certification" class="center flex-column container">
+          <h2 class="text-center">Steps to <span class="gradient-text primary-text">Certification</span></h2>
+          <div class="row row-cols-1 row-cols-lg-3 mt-5">
+
+            <div class="col">
+              <div class="card w-100 border-radius">
+                <div class="card-header border-0 p-3 pb-0">
+                  <p class="level-label fw-bold mb-0 text-uppercase">Step 1</p>
+                  <div class="icon center flex-column px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/><path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208M6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5"/></svg>
+                    <h3 class="text-center my-1">Exam Preparation</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Review the exam preparation guide to ensure that you are familiar with the requirements of the exam and what is expected. Don't hasitate to ask us questions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card w-100 border-radius">
+                <div class="card-header border-0 p-3 pb-0">
+                  <p class="level-label fw-bold mb-0 text-uppercase">Step 2</p>
+                  <div class="icon center flex-column px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/><path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/></svg>
+                    <h3 class="text-center my-1">Optional Training</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">If you need additional training there is additional self-study training available or alternatively you can elect to attend the live intensive bootcamp training sessions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card w-100 border-radius">
+                <div class="card-header border-0 p-3 pb-0">
+                  <p class="level-label fw-bold mb-0 text-uppercase">Step 3</p>
+                  <div class="icon center flex-column px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary" viewBox="0 0 16 16"><path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/></svg>
+                    <h3 class="text-center my-1">Take Examination</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text mb-0">The online exam will consist of both multiple choice questions and practical coding exercises. Take the exam whenever convenient for you from the comfort of your home.</p>
+                </div>  
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- end of steps-to-certification section -->
+
+        <!-- start of certificates section -->
+        <section id="certificates" class="d-flex flex-column justify-content-center container">
+          <h2 class="text-center">Vue.js Certification <span class="gradient-text primary-text">Levels</span></h2>
+          <div class="row row-cols-1 row-cols-lg-2 mt-5 mb-lg-4">
+
+            <div class="col">
+              <div class="card mid-level w-100 border-radius">
+                <div class="card-header border-0 position-relative p-3">
+                  <div class="icon center pt-0">
+                    <img src="img/svgs/logo-green.svg" width="60" height="61" alt="Vue JS green logo" loading="lazy">
+                  </div>
+                  <h3 class="text-center gradient-text green-text my-2">Mid-Level Vue.js Developer</h3>
+                </div>
+                <div class="details d-flex flex-wrap gap-2 px-3">
+                  <p class="d-inline-flex align-items-center gap-2">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" class="bi bi-details" viewBox="0 0 16 16"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/></svg>
+                    </span>
+                    <span>135 min</span>
+                  </p>
+                  <p class="d-inline-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" class="bi bi-details" viewBox="0 0 16 16"><path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+                    30 Questions and 105 minutes of Coding Challenges
+                  </p>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-start pt-0">
+                  <p class="card-text">Review the exam preparation guide to ensure that you are familiar with the requirements of the exam and what is expected. Don't hasitate to ask us questions.</p>
+                  <div class="btn-gradient-container rounded-3 center">
+                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative green-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card senior-level w-100 border-radius">
+                <div class="card-header border-0 position-relative p-3">
+                  <div class="icon center pt-0">
+                    <img src="img/svgs/logo-purple.svg" width="60" height="61" alt="Vue JS dark purple logo" loading="lazy">
+                  </div>
+                  <h3 class="text-center mt-2 mb-2 gradient-text pink-text">Senior Vue.js Developer</h3>
+                </div>
+                <div class="details d-flex flex-wrap gap-2 px-3">
+                  <p class="d-inline-flex align-items-center gap-2">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--pink)" class="bi bi-details" viewBox="0 0 16 16"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/></svg>
+                    </span>
+                    <span>135 min</span>
+                  </p>
+                  <p class="d-inline-flex align-items-center gap-2">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--pink)" class="bi bi-details" viewBox="0 0 16 16"><path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+                    </span>
+                    30 Questions and 105 minutes of Coding Challenges
+                  </p>
+                </div>
+                <div class="card-body center flex-column pt-0">
+                  <p class="card-text">If you need additional training, there is additional self-study training available or alternatively you can elect to attend the live intensive bootcamp training sessions.</p>
+                  <div class="btn-gradient-container rounded-3 center">
+                    <a href="#switch-for-levels" class="btn btn-gradient primary-text position-relative pink-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">View Pricing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video position-relative mt-3">
+            <iframe id="video" class="d-block w-100 h-100 position-absolute border-radius" src="https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;height:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/8SQDZ-P-h3Q?rel=0&autoplay=1'><picture><source srcset='img/sddefault-large.webp' media='(width >= 600px)'><source srcset='img/sddefault-small.webp' media='(width < 600px)'><img src='img/sddefault-large.webp' width='1280' height='720' alt='Certified Vue.js Developer: Chapter 1 Overview' class='img-fluid' loading='lazy'></picture><span>▶</span></a>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Certified Vue.js Developer: Chapter 1 Overview" loading="lazy"></iframe>
+          </div>
+
+        </section>
+        <!-- end of certificates section -->
+
+        <!-- start of certificates section -->
+        <section id="switch-for-levels" class="center flex-column container">
+          <h2 class="text-center">Choose Your <span class="gradient-text primary-text">Level</span></h2>
+          <div class="switch-for-levels-container center flex-row p-3">
+
+            <div id="mid-level" class="levels-container position-relative border-radius btn-outline primary-outline p-3 m-3">
+              <div class="levels-content center">
+                <span class="heading-primary">
+                <em class="fst-normal gradient-text primary-text">Mid-Level</em>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-check form-switch d-flex mb-0 pl-0">
+              <input class="form-check-input float-none mt-0 ml-0 pl-0" type="checkbox" role="switch" id="levels-toggle" aria-label="levels toggle button">
+            </div>
+
+            <div id="senior-level" class="levels-container position-relative border-radius p-3 m-3">
+              <div class="levels-content center">
+                <span class="heading-secondary">
+                <em class="fst-normal">Senior</em>
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- start of pricing block -->
+          <div id="pricing" class="d-block w-100">
+
+            <!-- start of Mid-Level pricing cards -->
+            <div class="products-container mid-level row row-cols-1 row-cols-lg-3 d-flex">
+
+              <div class="col">
+                <div class="card d-flex justify-content-center w-100 border-radius">
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid-Level</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/><path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/><path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam Only</h4>
+                      </div>  
+                      <h5 class="product-price fw-bold mt-2">$198</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-3 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                        </ul>
+                      </div>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card best-value d-flex justify-content-center w-100 border-radius">
+                  <div class="card-header border-0 fw-bold text-uppercase text-center">Best Value</div>
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid-Level</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam & Preparation Bundle</h4>
+                      </div>
+                      <h5 class="product-price fw-bold mt-2">$399</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Self-Study Training Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Training Challenge Solutions</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Free Retake</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
+                        </ul>
+                      </div>
+                      <button class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card d-flex justify-content-center w-100 border-radius">
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid-Level</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam, Preparation & Bootcamp Bundle</h4>
+                      </div>
+                      <h5 class="product-price fw-bold mt-2">$599</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Self-Study Training Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Training Challenge Solutions</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Free Retake</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
+                        </ul>
+                      </div>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of Mid-Level pricing cards -->  
+
+            <!-- start of Mid + Senior pricing cards -->
+            <div class="products-container senior-level row row-cols-1 row-cols-lg-3 d-none">
+
+              <div class="col">
+                <div class="card d-flex justify-content-center w-100 border-radius">
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid + Senior</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/><path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/><path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam Only</h4>
+                      </div>  
+                      <h5 class="product-price fw-bold mt-2">$399</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-3 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                        </ul>
+                      </div>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card best-value d-flex justify-content-center w-100 border-radius">
+                  <div class="card-header border-0 fw-bold text-uppercase text-center">Best Value</div>
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid + Senior</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam & Preparation Bundle</h4>
+                      </div>
+                      <h5 class="product-price fw-bold mt-2">$659</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Self-Study Training Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Training Challenge Solutions</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Free Retake</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
+                        </ul>
+                      </div>
+                      <button class="btn btn-primary-effect gap-2 border-0 rounded-3 fw-bold text-uppercase d-md-block">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card d-flex justify-content-center w-100 border-radius">
+                  <div class="card-body">
+                    <h3 class="level-label mb-0 text-capitalize text-left fw-bold fs-6">Mid + Senior</h3>
+                    <div class="level-container center flex-column text-center w-100">
+                      <div class="level-content text-uppercase fw-bold w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-3x bi-primary mt-2" viewBox="0 0 16 16"><path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/></svg>
+                        <h4 class="product-coverage fw-bold mt-2 text-break">Exam, Preparation & Bootcamp Bundle</h4>
+                      </div>
+                      <h5 class="product-price fw-bold mt-2">$1199</h5>
+                      <div class="card-text">
+                        <ul class="benefits-list d-flex align-items-start justify-content-start flex-column p-0 mt-2 mb-4">
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Preparation Guide Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Discord Community Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Self-Study Training Access</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Training Challenge Solutions</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Mid-level Vue.js Exam Voucher</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Free Retake</li>
+                          <li class="benefits"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--primary)" class="bi bi-primary bi-circle-check" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>Trial Exam</li>
+                        </ul>
+                      </div>
+                      <div class="btn-gradient-container border-0 rounded-3 center">  
+                        <a href="#" class="btn btn-gradient primary-text position-relative primary-gradient border-0 rounded-3 fw-bold text-uppercase text-decoration-none">Buy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- end of pricing block -->
+
+        </section>
+        <!-- end of certificates section -->
+
+      </main>
+
+    </div>
+
+    <footer class="primary-bg center flex-column p-3 mt-5">
+      <ul class="d-flex">
+        <li class="px-4">
+          <a href="https://certificates.dev/vuejs/legal/privacy-policy" class="text-decoration-none" target="_blank" rel="noopener">
+            <span>Privacy</span>
+          </a>
+        </li>
+        <li class="px-4">
+          <a href="https://certificates.dev/vuejs/legal/terms-conditions" class="text-decoration-none" target="_blank" rel="noopener">
+            <span>Terms</span>
+          </a>
+          </li>
+        <li class="px-4">
+          <a href="mailto:team@certificates.dev" class="text-decoration-none">Contact</a>
+        </li>
+      </ul>
+      <p class="mt-3 mb-0">
+        <a href="https://ralitsavoronevska.com/" class="text-decoration-underline"
+          target="_blank" rel="noopener">&#60;Ralitsa Voronevska&#47;&#62;</a> <span class="mt-0">&copy; 2025</span>
+      </p>
+    </footer>
+
+    <script src="js/menu-script-min.js" defer></script>
+    <script src="js/switch-script-min.js" defer></script>
+  </body>
+</html>
